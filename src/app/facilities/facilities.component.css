@@ -1,0 +1,13 @@
+/*-- Edifice-Starts-Here --*/
+.edifice {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EEE;
+    text-align: center;
+}
+img.lazyOwl {
+    width: 100%;
+}
+#owl-demo .item img {
+    height: 250px;
+}
+/*-- //Edifice-Ends-Here --*/

@@ -1,0 +1,20 @@
+/*-- About-Starts-Here --*/
+.about {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EEE;
+}
+.about p {
+    color: #333;
+    line-height: 35px;
+    padding: 0 0 50px 0;
+}
+.about span {
+    color: #333;
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 15px;
+}
+#about-p p {
+    padding: 40px 0;
+}
+/*-- //About-Ends-Here --*/

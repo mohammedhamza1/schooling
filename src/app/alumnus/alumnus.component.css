@@ -1,0 +1,20 @@
+/*-- Alumnus-Starts-Here --*/
+.alumnus {    
+    margin-bottom: 50px;
+}
+.alumnus img {
+    padding: 30px 0px;
+    opacity: 0.8;
+}
+.alumnus img:hover {
+    opacity: 1;
+}
+.alumnus h4 {
+    font-size: 25px;
+    padding: 0;
+    color: #009688;
+}
+.alumnus p {
+    line-height: 30px;
+}
+/*-- //Alumnus-Ends-Here --*/
