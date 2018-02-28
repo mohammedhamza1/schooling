@@ -19,6 +19,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { EventsComponent } from './events/events.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -41,7 +42,8 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     EventsComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule
