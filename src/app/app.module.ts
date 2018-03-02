@@ -20,6 +20,7 @@ import { EventsComponent } from './events/events.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { TableComponent } from './student-components/table/table.component';
 
 
 
@@ -43,7 +44,8 @@ import { LoginComponent } from './login/login.component';
     EventsComponent,
     NewsComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule
