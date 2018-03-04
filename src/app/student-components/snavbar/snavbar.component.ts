@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snavbar.component.css']
 })
 export class SnavbarComponent implements OnInit {
-
+  studentName: string;
   constructor() { }
 
   ngOnInit() {
+    this.studentName = 'mohammed';
   }
 
 }
