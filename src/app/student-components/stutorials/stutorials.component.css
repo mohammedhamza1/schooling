@@ -1,0 +1,53 @@
+/*-- stutorials-Starts-Here --*/
+.stutorials {
+    padding: 0 50px 60px 50px;
+    border-bottom: 1px solid #EEE;
+    text-align: center;
+}
+.stutorials .stutorial{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all ease-in-out .3s;
+}
+.stutorials .stutorial:hover{
+    box-shadow: 0px 22px 60px -29px;
+}
+.stutorials h3 {
+    text-transform: uppercase;
+}
+.stutorials h6{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    color: #555;
+}
+.stutorials span{
+    font-size: 17px;
+    font-weight: normal;
+    color: #777;
+}
+.stutorials p {
+    line-height: 35px;
+    padding: 0 0 25px 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+.pdf{
+    margin-bottom: 20px;
+}
+.pdf a {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 18px;
+   
+}
+.pdf a:hover {
+    background-color: #333;
+    color: #FFF;
+}
+/*-- //stutorials-Ends-Here --*/

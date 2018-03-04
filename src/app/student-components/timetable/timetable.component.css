@@ -13,6 +13,7 @@
     text-align: center;
     font-size: 18px;
 }
+
 .table tbody tr th.days,
 .table.time tbody tr th.time{
     background: #009688;
@@ -23,6 +24,7 @@
     line-height: 50px;
     text-align: center;
 }
+
 .table tbody tr td{
     background:#fff;
     font-weight: bold;
