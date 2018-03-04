@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TimetableComponent implements OnInit {
   days: object[];
   classes: number[];
+  classTime: object[];
 
   constructor() { }
 
@@ -22,6 +23,10 @@ export class TimetableComponent implements OnInit {
     ]
 
     this.classes = [1, 2, 3, 4, 5, 6]
+
+    this.classTime = [
+      { one: '08:00', two: '09:30', three: '11:00', four: '12:30', five: '02:00', six: '03:30' }
+    ]
 
   }
 

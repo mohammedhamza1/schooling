@@ -25,6 +25,7 @@ import { SnavbarComponent } from './student-components/snavbar/snavbar.component
 import { SteachersComponent } from './student-components/steachers/steachers.component';
 import { SeventsComponent } from './student-components/sevents/sevents.component';
 import { ScontactComponent } from './student-components/scontact/scontact.component';
+import { SfooterComponent } from './student-components/sfooter/sfooter.component';
 
 
 
@@ -54,7 +55,8 @@ import { ScontactComponent } from './student-components/scontact/scontact.compon
     SnavbarComponent,
     SteachersComponent,
     SeventsComponent,
-    ScontactComponent
+    ScontactComponent,
+    SfooterComponent
   ],
   imports: [
     BrowserModule

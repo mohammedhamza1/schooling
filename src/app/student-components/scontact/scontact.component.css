@@ -1,4 +1,7 @@
 /*-- Contact-Starts-Here --*/
+.contact{
+    padding-bottom: 30px;
+}
 div#contact {
     padding-bottom: 50px;
     border-bottom: 1px solid #EEE;

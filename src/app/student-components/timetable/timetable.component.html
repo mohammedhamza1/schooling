@@ -22,5 +22,26 @@
         </tr>
       </tbody>
     </table>
+    <table class="table time">
+      <thead>
+        <tr>
+          <th scope="col">Period</th>
+          <th scope="col" *ngFor="let class of classes">
+            {{class}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of classTime">
+          <th class="time" scope="row">Time</th>
+          <td>{{item.one}}</td>
+          <td>{{item.two}}</td>
+          <td>{{item.three}}</td>
+          <td>{{item.four}}</td>
+          <td>{{item.five}}</td>
+          <td>{{item.six}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
