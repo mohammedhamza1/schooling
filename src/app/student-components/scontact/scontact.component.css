@@ -7,7 +7,7 @@ div#contact {
     border-bottom: 1px solid #EEE;
     font-family: 'OpenSans-Regular';
 }
-.contact_form input[type='text'] {
+.contact_form input[type='text'],.contact_form input[type='email'] {
     width: 100%;
     border-radius: 0;
     line-height: 22px;

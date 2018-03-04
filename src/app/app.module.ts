@@ -26,6 +26,7 @@ import { SteachersComponent } from './student-components/steachers/steachers.com
 import { SeventsComponent } from './student-components/sevents/sevents.component';
 import { ScontactComponent } from './student-components/scontact/scontact.component';
 import { SfooterComponent } from './student-components/sfooter/sfooter.component';
+import { SmessagesComponent } from './student-components/smessages/smessages.component';
 
 
 
@@ -56,7 +57,8 @@ import { SfooterComponent } from './student-components/sfooter/sfooter.component
     SteachersComponent,
     SeventsComponent,
     ScontactComponent,
-    SfooterComponent
+    SfooterComponent,
+    SmessagesComponent
   ],
   imports: [
     BrowserModule
