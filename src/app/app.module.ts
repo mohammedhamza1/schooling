@@ -21,6 +21,10 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { TimetableComponent } from './student-components/timetable/timetable.component';
+import { SnavbarComponent } from './student-components/snavbar/snavbar.component';
+import { SteachersComponent } from './student-components/steachers/steachers.component';
+import { SeventsComponent } from './student-components/sevents/sevents.component';
+import { ScontactComponent } from './student-components/scontact/scontact.component';
 
 
 
@@ -46,7 +50,11 @@ import { TimetableComponent } from './student-components/timetable/timetable.com
     NewsComponent,
     ContactComponent,
     LoginComponent,
-    TimetableComponent
+    TimetableComponent,
+    SnavbarComponent,
+    SteachersComponent,
+    SeventsComponent,
+    ScontactComponent
   ],
   imports: [
     BrowserModule

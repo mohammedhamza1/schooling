@@ -1,0 +1,22 @@
+/*-- Events-Starts-Here --*/
+div#events {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EEE;
+    text-align: center;
+}
+.event-info h3 {
+    font-size: 25px;
+    color: #009688;
+    padding: 0px 0 20px 0;
+}
+.events li {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+}
+.events span {
+    color: #009688;
+}
+/*-- //Events-Ends-Here --*/

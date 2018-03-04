@@ -1,98 +1,43 @@
-<!-- Body-Starts-Here -->
+<!-- Start Home Components -->
 
-<body>
-  <!-- Header-Starts-Here -->
+<body *ngIf="showHome">
   <div class="header">
-    <!-- Navbar-Starts-Here -->
     <app-navbar></app-navbar>
-    <!-- //Navbar-Ends-Here -->
-    <!-- Carousel-Starts-Here -->
     <app-slider></app-slider>
-    <!-- //Carousel-Ends-Here -->
-
   </div>
-  <!-- Header-Ends-Here -->
-
-  <!-- Content-Starts-Here -->
   <div class="content">
-
-    <!-- Heading -->
     <h1 class="abbr">SCHOOLING FOR STUDENTS, PARENTS, TEACHERS & MANEGEMENT</h1>
-    <!-- //Heading -->
-
     <div class="container">
-
-      <!-- About-Starts-Here -->
       <app-about></app-about>
-      <!-- //About-Ends-Here -->
-
-      <!-- Foreword-Starts-Here -->
       <app-foreword></app-foreword>
-      <!-- //Foreword-Ends-Here -->
-
-      <!-- Admissions-Starts-Here -->
-      <!--
-      <app-admissions></app-admissions>
-      -->
-      <!-- //Admissions-Ends-Here -->
-
-      <!-- Alumnus-Starts-Here -->
-      <!--
-      <app-alumnus></app-alumnus>
-      -->
-      <!-- //Alumnus-Ends-Here -->
-
-      <!-- Programs-Starts-Here -->
       <app-programs></app-programs>
-      <!-- //Programs-Ends-Here -->
-
-      <!-- Services-Starts-Here -->
       <app-services></app-services>
-      <!-- //Services-Ends-Here -->
-
-      <!-- teachers-Starts-Here -->
-      <!--
-      <app-teachers></app-teachers>
-      -->
-      <!-- //teachers-Ends-Here -->
-
-      <!-- Edifice-Starts-Here -->
-      <!--
-      <app-facilities></app-facilities>
-      -->
-      <!-- //Edifice-Ends-Here -->
-
-      <!-- Projects-Starts-Here -->
-      <!--
-      <app-projects></app-projects>
-      -->
-      <!-- //Projects-Ends-Here -->
-
-      <!-- Events-Starts-Here -->
-      <!--
-      <app-events></app-events>
-      -->
-      <!-- //Events-Ends-Here -->
-
-      <!-- News-Starts-Here -->
-      <!--
-      <app-news></app-news>
-      -->
-      <!-- //News-Ends-Here -->
-
-      <!-- Contact-Starts-Here -->
       <app-contact></app-contact>
-      <!-- //Contact-Ends-Here -->
-
     </div>
-
-    <!-- Map-iFrame -->
     <app-map></app-map>
-    <!-- //Map-iFrame -->
-
   </div>
-  <!-- Content-Ends-Here -->
-
-  <!-- Footer-Starts-Here -->
   <app-footer></app-footer>
-  <!-- //Footer-Ends-Here -->
+</body>
+
+<!-- //End Home Components -->
+
+<!-- Start Student Components -->
+
+<body *ngIf="showStudent">
+  <div class="header">
+    <app-snavbar></app-snavbar>
+    <app-slider></app-slider>
+  </div>
+  <div class="content">
+    <h1 class="abbr">welcome {{studentName}}! happy schooling.</h1>
+    <div class="container">
+      <app-timetable></app-timetable>
+      <app-steachers></app-steachers>
+      <app-sevents></app-sevents>
+      <app-scontact></app-scontact>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>
+
+<!-- //End Student Components -->
