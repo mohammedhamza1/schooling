@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showHome: boolean = false;
-  showStudent: boolean = true;
   studentName: string = 'mohammed';
 }

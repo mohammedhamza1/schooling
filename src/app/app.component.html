@@ -1,45 +1,45 @@
 <!-- Start Home Components -->
 
 <body *ngIf="showHome">
-  <div class="header">
-    <app-navbar></app-navbar>
-    <app-slider></app-slider>
-  </div>
-  <div class="content">
-    <h1 class="abbr">SCHOOLING FOR STUDENTS, PARENTS, TEACHERS & MANEGEMENT</h1>
-    <div class="container">
-      <app-about></app-about>
-      <app-foreword></app-foreword>
-      <app-programs></app-programs>
-      <app-services></app-services>
-      <app-contact></app-contact>
+    <div class="header">
+        <app-navbar></app-navbar>
+        <app-slider></app-slider>
     </div>
-    <app-map></app-map>
-  </div>
-  <app-footer></app-footer>
+    <div class="content">
+        <h1 class="abbr">SCHOOLING FOR STUDENTS, PARENTS, TEACHERS & MANEGEMENT</h1>
+        <div class="container">
+            <app-about></app-about>
+            <app-foreword></app-foreword>
+            <app-programs></app-programs>
+            <app-services></app-services>
+            <app-contact></app-contact>
+        </div>
+        <app-map></app-map>
+    </div>
+    <app-footer></app-footer>
 </body>
 
 <!-- //End Home Components -->
 
 <!-- Start Student Components -->
 
-<body *ngIf="showStudent">
-  <div class="header">
-    <app-snavbar></app-snavbar>
-    <app-slider></app-slider>
-  </div>
-  <div class="content">
-    <h1 class="abbr">welcome {{studentName}}! happy schooling.</h1>
-    <div class="container">
-      <app-timetable></app-timetable>
-      <app-stutorials></app-stutorials>
-      <app-steachers></app-steachers>
-      <app-sevents></app-sevents>
-      <app-scontact></app-scontact>
-      <app-smessages></app-smessages>
+<body *ngIf="!showHome">
+    <div class="header">
+        <app-snavbar></app-snavbar>
+        <app-slider></app-slider>
     </div>
-  </div>
-  <app-sfooter></app-sfooter>
+    <div class="content">
+        <h1 class="abbr">welcome {{studentName}}! happy schooling.</h1>
+        <div class="container">
+            <app-timetable></app-timetable>
+            <app-stutorials></app-stutorials>
+            <app-steachers></app-steachers>
+            <app-sevents></app-sevents>
+            <app-scontact></app-scontact>
+            <app-smessages></app-smessages>
+        </div>
+    </div>
+    <app-sfooter></app-sfooter>
 </body>
 
 <!-- //End Student Components -->
