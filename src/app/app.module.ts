@@ -1,7 +1,9 @@
+//Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router'
 
-
+//Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -28,10 +30,23 @@ import { ScontactComponent } from './student-components/scontact/scontact.compon
 import { SfooterComponent } from './student-components/sfooter/sfooter.component';
 import { SmessagesComponent } from './student-components/smessages/smessages.component';
 import { StutorialsComponent } from './student-components/stutorials/stutorials.component';
+import { HomeComponent } from './home-component/home/home.component';
+import { StudentComponent } from './student-components/student/student.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
-
+// our routes
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'student', component: StudentComponent },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+]
 
 
 @NgModule({
@@ -61,10 +76,13 @@ import { StutorialsComponent } from './student-components/stutorials/stutorials.
     ScontactComponent,
     SfooterComponent,
     SmessagesComponent,
-    StutorialsComponent
+    StutorialsComponent,
+    HomeComponent,
+    StudentComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

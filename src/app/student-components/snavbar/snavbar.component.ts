@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-snavbar',
@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snavbar.component.css']
 })
 export class SnavbarComponent implements OnInit {
-  studentName: string;
+
+  @Input() studentName: string;
+
   constructor() { }
 
   ngOnInit() {
-    this.studentName = 'mohammed';
   }
 
 }
