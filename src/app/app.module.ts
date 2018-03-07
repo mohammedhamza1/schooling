@@ -33,6 +33,7 @@ import { StutorialsComponent } from './student-components/stutorials/stutorials.
 import { HomeComponent } from './home-component/home/home.component';
 import { StudentComponent } from './student-components/student/student.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SinformationComponent } from './student-components/sinformation/sinformation.component';
 
 
 
@@ -42,7 +43,7 @@ const appRoutes: Routes = [
   { path: 'student', component: StudentComponent },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/student',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
@@ -79,7 +80,8 @@ const appRoutes: Routes = [
     StutorialsComponent,
     HomeComponent,
     StudentComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SinformationComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
