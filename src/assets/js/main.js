@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.alert').alert();
     //Smooth-Scrolling 
     $(".scroll").click(function (event) {
         event.preventDefault();
@@ -16,7 +17,6 @@ $(document).ready(function () {
         pagination: false,
     });
     //requried-jsfiles-for owl 
-
 
     /*
         var defaults = {

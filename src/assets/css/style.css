@@ -49,6 +49,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 35px;
     padding: 50px 0;
 }
+h2{
+    text-transform: uppercase;
+}
 p {
     margin: 0;    
     font-size: 15px;
@@ -80,6 +83,7 @@ h1.abbr {
     font-size: 40px;
     border-bottom: 1px solid #EEE;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 
@@ -114,18 +118,27 @@ i.arrow {
     font-size: 16px;
     font-family: 'Montserrat-Regular';
     padding: 14px 0;
-    color: #EEE;
-    background-color: transparent;
+    color: #fff;
+    /*background-color: transparent;*/
+    border: 2px solid #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 5px;
+    width: 85%;
+    margin-left: 5%;
+    border-radius: 3px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+
  #loginpop a span:hover {
-    color: #333;
-    background-color: #eee;
+    background: #fff;
+    color: #009688;
 }
+
 /*-- Login-Button --*/
 #loginButton { 
     display: inline-block;  
@@ -197,7 +210,7 @@ fieldset#body {
 }
 #loginForm #login {
     width: 100%;
-    background: #0166FF;
+    background: #009688;
     color: #fff;
     font-size: 0.875em;
     padding: 8px 20px;
@@ -212,7 +225,7 @@ fieldset#body {
     text-transform: uppercase;  
 }
 #loginForm #login:hover {
-    background: #0025CA;     
+    background: #1dab9e;     
 }
 #loginForm input {
     width: 100%;
