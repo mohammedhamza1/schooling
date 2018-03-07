@@ -1,10 +1,13 @@
 /*-- Contact-Starts-Here --*/
+.contact{
+    padding-bottom: 30px;
+}
 div#contact {
     padding-bottom: 50px;
     border-bottom: 1px solid #EEE;
     font-family: 'OpenSans-Regular';
 }
-.contact_form input[type='text'] {
+.contact_form input[type='text'],.contact_form input[type='email'] {
     width: 100%;
     border-radius: 0;
     line-height: 22px;
