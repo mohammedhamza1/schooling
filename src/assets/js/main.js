@@ -8,7 +8,7 @@ $(document).ready(function () {
         }, 1200);
     });
     //Smooth-Scrolling 
-
+    
     //requried-jsfiles-for owl 
     $("#owl-demo").owlCarousel({
         items: 3,
