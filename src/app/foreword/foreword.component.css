@@ -2,6 +2,7 @@
 .foreword {
     padding: 0 50px 40px;
     border-bottom: 1px solid #EEE;
+    background: #f3f3f3;
 }
 .foreword p {
     line-height: 35px;
