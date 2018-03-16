@@ -18,7 +18,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: url("../images/bg.png");
+    /*background: url("../images/bg.png");*/
 }
 body a {
     transition: 0.5s all;
@@ -130,8 +130,9 @@ i.arrow {
 }
 
  #loginpop a span:hover {
-    background: #fff;
-    color: #009688;
+    background: transparent;
+    color: #EE2B47;
+    border-color: #EE2B47;
 }
 
 /*-- Login-Button --*/
@@ -205,7 +206,7 @@ fieldset#body {
 }
 #loginForm #login {
     width: 100%;
-    background: #009688;
+    background: #EE2B47;
     color: #fff;
     font-size: 0.875em;
     padding: 8px 20px;
@@ -220,7 +221,7 @@ fieldset#body {
     text-transform: uppercase;  
 }
 #loginForm #login:hover {
-    background: #1dab9e;     
+    background: rgb(241, 66, 93);     
 }
 #loginForm input {
     width: 100%;
