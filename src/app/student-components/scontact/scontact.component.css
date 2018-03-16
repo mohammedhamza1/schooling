@@ -2,7 +2,7 @@
 .contact{
     padding-bottom: 30px;
     margin-bottom: 20px;
-    background-color: #142127;
+    background-color: #0E2431;
     color: #fff;
 }
 
@@ -14,7 +14,7 @@ div#contact {
     border-bottom: 1px solid #EEE;
     font-family: 'OpenSans-Regular';
 }
-.contact_form input[type='text'],.contact_form input[type='email'] {
+.contact_form input[type='text']{
     width: 100%;
     border-radius: 0;
     line-height: 22px;
@@ -24,7 +24,7 @@ div#contact {
     color: #fff;
     height: 50px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -41,7 +41,7 @@ div#contact {
     padding: 14px 17px 14px;
     outline: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ div#contact {
 }
 .contact_form input:focus,.contact_form textarea:focus{
     box-shadow: none;
-    border-bottom-color: #009688;
+    border-color: #EE2B47;
 }
 .contact_form input::placeholder,.contact_form textarea::placeholder{
     color: #fff;
@@ -66,9 +66,9 @@ form.contact_form {
 }
 .more_btn {
     padding: 13px 30px;
-    border: 1px solid #333;
+    border: 1px solid #0E2431;
     font-size: 16px;
-    color: #333;
+    color: #0E2431;
     background-color: #FAFAFA;
     text-decoration: none;
     transition: 0.5s all;
@@ -79,7 +79,7 @@ form.contact_form {
 }
 .more_btn:hover {
     color: #FFF;
-    background-color: #009688;
+    background-color: #EE2B47;
     cursor: pointer;
 }
 /*-- //Contact-Ends-Here --*/

@@ -1,13 +1,13 @@
 /*-- Footer-Starts-Here --*/
 .footer {
-    background-color: #142127;
+    background-color: #0E2431;
     font-family: 'OpenSans-Regular';
 }
 .footer-info {
     padding-top: 10px;
 }
 .footer h3 {
-    color: #009688;
+    color: #FC3A52;
     font-size: 20px;
     padding: 20px 0;
     text-align: left;
@@ -28,7 +28,7 @@ address {
     margin-bottom: 20px;
 }
 a.mail {
-    color: #047D74;
+    color: #FC3A52;
 }
 a.mail:hover {
     color: #FFF;
@@ -63,7 +63,7 @@ ul.social li a {
 }
 ul.social li .fa{
     background: #fff;
-    color: #000;
+    color: #0E2431;
     width: 45px;
     height: 45px;
     line-height: 45px;
