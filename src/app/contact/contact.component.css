@@ -2,7 +2,7 @@
 .contact{
     padding-bottom: 30px;
     margin-bottom: 20px;
-    background-color: #0E2431;
+    background-color: #EE2B47;
     color: #fff;
 }
 
@@ -30,6 +30,7 @@ div#contact {
     box-sizing: border-box;
     margin: 0 0 20px;
     background: none;
+    box-shadow: none;
     transition: all ease-in-out .3s;
 }
 
@@ -49,11 +50,12 @@ div#contact {
     color: #fff;
     height: 191px;
     background: none;
+    box-shadow: none;
     transition: all ease-in-out .3s;
 }
 .contact_form input:focus,.contact_form textarea:focus{
     box-shadow: none;
-    border-color: #EE2B47;
+    border-color: #F9B248;
 }
 .contact_form input::placeholder,.contact_form textarea::placeholder{
     color: #fff;
@@ -66,7 +68,7 @@ form.contact_form {
 }
 .more_btn {
     padding: 13px 30px;
-    border: 1px solid #0E2431;
+    border: 1px solid #fff;
     font-size: 16px;
     color: #0E2431;
     background-color: #FAFAFA;
@@ -79,7 +81,7 @@ form.contact_form {
 }
 .more_btn:hover {
     color: #FFF;
-    background-color: #EE2B47;
+    background-color: #F9B248;
     cursor: pointer;
 }
 /*-- //Contact-Ends-Here --*/
