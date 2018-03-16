@@ -1,6 +1,13 @@
 /*-- Contact-Starts-Here --*/
 .contact{
     padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: #142127;
+    color: #fff;
+}
+
+.contact h3{
+    color: #fff;
 }
 div#contact {
     padding-bottom: 50px;
@@ -14,15 +21,18 @@ div#contact {
     font-size: 13px;
     padding: 14px 17px 14px;
     outline: none;
-    color: #5d5d5d;
+    color: #fff;
     height: 50px;
-    border: 1px solid #d5d5d5;
+    border: none;
+    border-bottom: 1px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 20px;
     background: none;
+    transition: all ease-in-out .3s;
 }
+
 .contact_form textarea {
     width: 100%;
     border-radius: 0;
@@ -30,14 +40,23 @@ div#contact {
     font-size: 13px;
     padding: 14px 17px 14px;
     outline: none;
-    border: 1px solid #d5d5d5;
+    border: none;
+    border-bottom: 1px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     resize: none;
-    color: #5d5d5d;
+    color: #fff;
     height: 191px;
     background: none;
+    transition: all ease-in-out .3s;
+}
+.contact_form input:focus,.contact_form textarea:focus{
+    box-shadow: none;
+    border-bottom-color: #009688;
+}
+.contact_form input::placeholder,.contact_form textarea::placeholder{
+    color: #fff;
 }
 form.contact_form {
     text-align: center;
@@ -60,7 +79,7 @@ form.contact_form {
 }
 .more_btn:hover {
     color: #FFF;
-    background-color: #142127;
+    background-color: #009688;
     cursor: pointer;
 }
 /*-- //Contact-Ends-Here --*/
