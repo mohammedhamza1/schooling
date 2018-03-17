@@ -2,7 +2,7 @@
 .contact{
     padding-bottom: 30px;
     margin-bottom: 20px;
-    background-color: #0E2431;
+    background-color: #ed1c24;
     color: #fff;
 }
 
@@ -14,14 +14,14 @@ div#contact {
     border-bottom: 1px solid #EEE;
     font-family: 'OpenSans-Regular';
 }
-.contact_form input[type='text']{
+.contact_form input[type='text'],.contact_form input[type='email']{
     width: 100%;
     border-radius: 0;
     line-height: 22px;
-    font-size: 13px;
+    font-size: 17px;
     padding: 14px 17px 14px;
     outline: none;
-    color: #fff;
+    color: #999;
     height: 50px;
     border: none;
     border-bottom: 2px solid #fff;
@@ -30,6 +30,7 @@ div#contact {
     box-sizing: border-box;
     margin: 0 0 20px;
     background: none;
+    box-shadow: none;
     transition: all ease-in-out .3s;
 }
 
@@ -37,7 +38,7 @@ div#contact {
     width: 100%;
     border-radius: 0;
     line-height: 22px;
-    font-size: 13px;
+    font-size: 17px;
     padding: 14px 17px 14px;
     outline: none;
     border: none;
@@ -46,17 +47,20 @@ div#contact {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     resize: none;
-    color: #fff;
+    color: #999;
     height: 191px;
     background: none;
+    box-shadow: none;
     transition: all ease-in-out .3s;
 }
 .contact_form input:focus,.contact_form textarea:focus{
     box-shadow: none;
-    border-color: #EE2B47;
+    background: #fff;
+    border-radius: 5px;
 }
 .contact_form input::placeholder,.contact_form textarea::placeholder{
     color: #fff;
+    font-size: 13px;
 }
 form.contact_form {
     text-align: center;
@@ -66,9 +70,9 @@ form.contact_form {
 }
 .more_btn {
     padding: 13px 30px;
-    border: 1px solid #0E2431;
+    border: 1px solid #fff;
     font-size: 16px;
-    color: #0E2431;
+    color: #333;
     background-color: #FAFAFA;
     text-decoration: none;
     transition: 0.5s all;
@@ -79,7 +83,8 @@ form.contact_form {
 }
 .more_btn:hover {
     color: #FFF;
-    background-color: #EE2B47;
+    background-color: #333;
+    border-color: #333;
     cursor: pointer;
 }
 /*-- //Contact-Ends-Here --*/

@@ -1,26 +1,26 @@
 /*-- Footer-Starts-Here --*/
 .footer {
-    background-color: #0E2431;
+    background-color: #222;
     font-family: 'OpenSans-Regular';
 }
 .footer-info {
     padding-top: 10px;
 }
 .footer h3 {
-    color: #FC3A52;
+    color: #ed1c24;
     font-size: 20px;
     padding: 20px 0;
     text-align: left;
 }
 p.access-p {
-    color: #525F5D;
+    color: #777;
     font-size: 13px;
     line-height: 25px;
 }
 
 address li {
     display: block;
-    color: #525F5D;
+    color: #777;
     font-size: 13px;
     line-height: 20px;
 }
@@ -28,7 +28,7 @@ address {
     margin-bottom: 20px;
 }
 a.mail {
-    color: #FC3A52;
+    color: #ed1c24;
 }
 a.mail:hover {
     color: #FFF;
@@ -41,7 +41,7 @@ ul.footer_list li {
     font-size: 13px;
 }
 a.scroll {
-    color: #525F5D;
+    color: #777;
 }
 a.scroll:hover {
     color: #FFF;
@@ -63,7 +63,7 @@ ul.social li a {
 }
 ul.social li .fa{
     background: #fff;
-    color: #0E2431;
+    color: #222;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -99,13 +99,6 @@ ul.social li .fa.fa-linkedin:hover{
 .copyright p {
     color: #FFF;
 }
-.copyright a {
-    color: #FFF;
-    text-decoration: none;
-}
-.copyright a:hover {
-    color: #009688;
-    text-decoration: underline;
-}
+
 
 /*-- //Footer-Ends-Here --*/
