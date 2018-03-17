@@ -206,7 +206,7 @@ fieldset#body {
 }
 #loginForm #login {
     width: 100%;
-    background: #EE2B47;
+    background: #ed1c24;
     color: #fff;
     font-size: 0.875em;
     padding: 8px 20px;
@@ -221,7 +221,7 @@ fieldset#body {
     text-transform: uppercase;  
 }
 #loginForm #login:hover {
-    background: rgb(241, 66, 93);     
+    background: #f14147;     
 }
 #loginForm input {
     width: 100%;
