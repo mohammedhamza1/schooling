@@ -1,7 +1,7 @@
 //Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import { AppComponent } from './app.component';
@@ -34,6 +34,9 @@ import { HomeComponent } from './home-component/home/home.component';
 import { StudentComponent } from './student-components/student/student.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SinformationComponent } from './student-components/sinformation/sinformation.component';
+import { LecturesTableComponent } from './student-components/lectures-table/lectures-table.component';
+import { MidtermTableComponent } from './student-components/midterm-table/midterm-table.component';
+import { FinalTableComponent } from './student-components/final-table/final-table.component';
 
 
 
@@ -81,7 +84,10 @@ const appRoutes: Routes = [
     HomeComponent,
     StudentComponent,
     PageNotFoundComponent,
-    SinformationComponent
+    SinformationComponent,
+    LecturesTableComponent,
+    MidtermTableComponent,
+    FinalTableComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
