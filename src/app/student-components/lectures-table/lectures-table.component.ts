@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TimetableService} from '../../student-services/timetable.service';
 
 @Component({
   selector: 'app-lectures-table',
@@ -10,24 +11,16 @@ export class LecturesTableComponent implements OnInit {
   classes: number[];
   classTime: object[];
 
-  constructor() { }
+  constructor(
+      private lectureTable: TimetableService,
+      private classesTable: TimetableService,
+      private classTimeTable: TimetableService
+  ) { }
 
   ngOnInit() {
-    this.days = [
-      { day: 'Saturday', one: 'arabic', two: 'bio', three: 'science', four: 'math', five: 'history', six: 'bio' },
-      { day: 'Sunday', one: 'english', two: 'science', three: 'history', four: 'science', five: 'math', six: 'history' },
-      { day: 'Monday', one: 'math', two: 'history', three: 'math', four: 'history', five: 'bio', six: 'math' },
-      { day: 'Tuesday', one: 'history', two: 'math', three: 'english', four: 'arabic', five: 'arabic', six: 'english' },
-      { day: 'Wednesday', one: 'science', two: 'english', three: 'arabic', four: 'bio', five: 'science', six: 'arabic' },
-      { day: 'Thursday ', one: 'bio', two: 'arabic', three: 'bio', four: 'english', five: 'english', six: 'science' },
-    ]
-
-    this.classes = [1, 2, 3, 4, 5, 6]
-
-    this.classTime = [
-      { one: '08:00', two: '09:30', three: '11:00', four: '12:30', five: '02:00', six: '03:30' }
-    ]
-
+    this.days = this.lectureTable.lectureArray();
+    this.classes = this.classesTable.classesArray();
+    this.classTime = this.classTimeTable.classesTimeArray();
   }
 
 }

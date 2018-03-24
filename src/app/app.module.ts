@@ -32,7 +32,8 @@ import { LecturesTableComponent } from './student-components/lectures-table/lect
 import { MidtermTableComponent } from './student-components/midterm-table/midterm-table.component';
 import { FinalTableComponent } from './student-components/final-table/final-table.component';
 
-
+//services
+import {TimetableService} from './student-services/timetable.service';
 
 // our routes
 const appRoutes: Routes = [
@@ -80,7 +81,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [TimetableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
