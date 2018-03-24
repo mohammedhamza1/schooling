@@ -1,6 +1,6 @@
 /*-- Programs-Starts-Here --*/
 .programs {
-    background-color: #0E2431;
+    background-color: #222;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -19,7 +19,14 @@
     background-color: #EEE;
     padding: 20px 20px 10px;
     color: #FFF;
-    border: 1px solid #EEE;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+}
+.program1:hover, .program2:hover, .program3:hover, .program4:hover{
+    margin-top: -10px;
 }
 .program1 {
     background: url("../../../assets/images/p1.png") no-repeat 95px 20px;
@@ -38,10 +45,11 @@
     margin-top: 100px;
     font-size: 20px;
     padding: 0;
+    color: #fff;
 }
 .program1 p, .program2 p, .program3 p, .program4 p {
     padding: 30px 0;
     line-height: 25px;
-    color: #8C8585;
+    color: #bbb;
 }
 /*-- //Programs-Ends-Here --*/
