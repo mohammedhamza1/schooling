@@ -5,23 +5,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { SliderComponent } from './slider/slider.component';
-import { MapComponent } from './map/map.component';
-import { AboutComponent } from './about/about.component';
-import { ForewordComponent } from './foreword/foreword.component';
-import { AdmissionsComponent } from './admissions/admissions.component';
-import { AlumnusComponent } from './alumnus/alumnus.component';
-import { ProgramsComponent } from './programs/programs.component';
-import { ServicesComponent } from './services/services.component';
-import { TeachersComponent } from './teachers/teachers.component';
-import { FacilitiesComponent } from './facilities/facilities.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { EventsComponent } from './events/events.component';
-import { NewsComponent } from './news/news.component';
-import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './home-component/navbar/navbar.component';
+import { FooterComponent } from './home-component/footer/footer.component';
+import { SliderComponent } from './home-component/slider/slider.component';
+import { MapComponent } from './home-component/map/map.component';
+import { AboutComponent } from './home-component/about/about.component';
+import { ForewordComponent } from './home-component/foreword/foreword.component';
+import { ProgramsComponent } from './home-component/programs/programs.component';
+import { ServicesComponent } from './home-component/services/services.component';
+import { ProjectsComponent } from './home-component/projects/projects.component';
+import { ContactComponent } from './home-component/contact/contact.component';
+import { LoginComponent } from './home-component/login/login.component';
 import { TimetableComponent } from './student-components/timetable/timetable.component';
 import { SnavbarComponent } from './student-components/snavbar/snavbar.component';
 import { SteachersComponent } from './student-components/steachers/steachers.component';
@@ -62,15 +56,9 @@ const appRoutes: Routes = [
     MapComponent,
     AboutComponent,
     ForewordComponent,
-    AdmissionsComponent,
-    AlumnusComponent,
     ProgramsComponent,
     ServicesComponent,
-    TeachersComponent,
-    FacilitiesComponent,
     ProjectsComponent,
-    EventsComponent,
-    NewsComponent,
     ContactComponent,
     LoginComponent,
     TimetableComponent,

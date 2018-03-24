@@ -1,0 +1,39 @@
+
+/*-- Services-Starts-Here --*/
+div#services {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 40px;
+}
+.services h3 {
+    padding-bottom: 40px;
+}
+.services p {
+    line-height: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.services h4 {
+    padding: 30px 0 30px 80px;
+    font-size: 23px;
+    color: #ed1c24;
+    text-align: left;
+}
+.services-info1 {
+    background: url("../../../assets/images/s1.png") no-repeat 0px 25px;
+}
+.services-info2 {
+    background: url("../../../assets/images/s2.png") no-repeat 0px 20px;
+}
+.services-info3 {
+    background: url("../../../assets/images/s3.png") no-repeat 0px 25px;
+}
+.services-info4 {
+    background: url("../../../assets/images/s4.png") no-repeat 0px 25px;
+}
+
+.services-info1 p, .services-info2 p, .services-info3 p, .services-info4 p {
+    padding-left: 80px;
+    text-align: left;
+    padding-bottom: 0;
+}
+/*-- //Services-Ends-Here --*/

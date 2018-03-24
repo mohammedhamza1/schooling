@@ -1,0 +1,90 @@
+/*-- Contact-Starts-Here --*/
+.contact{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: #ed1c24;
+    color: #fff;
+}
+
+.contact h3{
+    color: #fff;
+}
+div#contact {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EEE;
+    font-family: 'OpenSans-Regular';
+}
+.contact_form input[type='text'],.contact_form input[type='email']{
+    width: 100%;
+    border-radius: 0;
+    line-height: 22px;
+    font-size: 17px;
+    padding: 14px 17px 14px;
+    outline: none;
+    color: #999;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    background: none;
+    box-shadow: none;
+    transition: all ease-in-out .3s;
+}
+
+.contact_form textarea {
+    width: 100%;
+    border-radius: 0;
+    line-height: 22px;
+    font-size: 17px;
+    padding: 14px 17px 14px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    color: #999;
+    height: 191px;
+    background: none;
+    box-shadow: none;
+    transition: all ease-in-out .3s;
+}
+.contact_form input:focus,.contact_form textarea:focus{
+    box-shadow: none;
+    background: #fff;
+    border-radius: 5px;
+}
+.contact_form input::placeholder,.contact_form textarea::placeholder{
+    color: #fff;
+    font-size: 13px;
+}
+form.contact_form {
+    text-align: center;
+}
+.message {
+    margin-bottom: 50px;
+}
+.more_btn {
+    padding: 13px 30px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #333;
+    background-color: #FAFAFA;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.more_btn:hover {
+    color: #FFF;
+    background-color: #333;
+    border-color: #333;
+    cursor: pointer;
+}
+/*-- //Contact-Ends-Here --*/
