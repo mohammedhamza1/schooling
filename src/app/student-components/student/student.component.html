@@ -1,17 +1,14 @@
 <body>
   <div class="header">
-      <div class="overlay"></div>
+    <div class="overlay"></div>
     <app-snavbar [studentName]="studentName"></app-snavbar>
     <app-sinformation></app-sinformation>
   </div>
   <div class="content">
-    <h1 class="abbr">welcome {{studentName}}! happy schooling.</h1>
-    <div class="container">
-      <app-timetable></app-timetable>
-      <app-stutorials></app-stutorials>
-      <app-steachers></app-steachers>
-      <app-sevents></app-sevents>
-    </div>
+    <app-timetable></app-timetable>
+    <app-stutorials></app-stutorials>
+    <app-steachers></app-steachers>
+    <app-sevents></app-sevents>
     <app-scontact></app-scontact>
     <app-smessages></app-smessages>
   </div>

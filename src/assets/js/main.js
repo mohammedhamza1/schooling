@@ -8,7 +8,9 @@ $(document).ready(function () {
         }, 1200);
     });
     //Smooth-Scrolling 
-    
+    $('.stimetable h2 button').click(function () {
+        $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
+    });
     //requried-jsfiles-for owl 
     $("#owl-demo").owlCarousel({
         items: 3,
