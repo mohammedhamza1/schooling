@@ -35,6 +35,7 @@ import { FinalTableComponent } from './student-components/final-table/final-tabl
 
 //services
 import {TimetableService} from './student-services/timetable.service';
+import { LoginService } from './home-services/login.service';
 
 // our routes
 const appRoutes: Routes = [
@@ -42,11 +43,11 @@ const appRoutes: Routes = [
   { path: 'student', component: StudentComponent },
   {
     path: '',
-    redirectTo: '/student',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: PageNotFoundComponent }
-]
+  { path: '**', component: PageNotFoundComponent },
+];
 
 
 @NgModule({
@@ -82,7 +83,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
   ],
-  providers: [TimetableService],
+  providers: [TimetableService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
