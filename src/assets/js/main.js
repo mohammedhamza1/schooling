@@ -11,6 +11,14 @@ $(document).ready(function () {
     $('.stimetable h2 button').click(function () {
         $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
     });
+    $('.modalbtn').on('mouseenter',function () {
+        $(this).removeClass('fa-envelope');
+        $(this).addClass('fa-envelope-open');
+    });
+    $('.modalbtn').on('mouseleave',function () {
+        $(this).removeClass('fa-envelope-open');
+        $(this).addClass('fa-envelope');
+    });
     //requried-jsfiles-for owl 
     $("#owl-demo").owlCarousel({
         items: 3,
