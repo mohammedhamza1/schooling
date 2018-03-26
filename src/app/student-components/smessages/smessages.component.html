@@ -1,39 +1,61 @@
-<div class="container">
-  <div class="alert alert-success alert-dismissible slideanim" id="smessages" role="alert">
-    <strong>Message from:[Teacher name]</strong>
-    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
-      you can see how spacing within an alert works with this kind of content.</p>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
-
-
-<!--
-<div class="messages">
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-    aria-controls="collapseExample">
-    Button with data-target
-  </button>
-
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      <div class="alert alert-success alert-dismissible" role="alert">
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
-          you can see how spacing within an alert works with this kind of content.</p>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<!-- Button trigger modal -->
+<i type="button" class="modalbtn fa fa-envelope fa-fw" data-toggle="modal" data-target="#exampleModal">
+</i>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">messages</h5>
       </div>
-      <div class="alert alert-success alert-dismissible" role="alert">
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
-          you can see how spacing within an alert works with this kind of content.</p>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="modal-body">
+        <!--start message-->
+        <div class="message-content">
+          <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              <div class="sender-img">
+                <i class="fa fa-user-circle fa-fw fa-3x"></i>
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+              <div class="message-header">
+                <div class="sender-name">
+                  <h6>Amira rezk</h6>
+                </div>
+              </div>
+              <div class="message-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium asperiores, doloribus est exercitationem ipsa, labore laborum necessitatibus nemo numquam quibusdam quod ratione recusandae unde voluptatibus! Cupiditate et nihil pariatur?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end message-->
+        <!--start message-->
+        <div class="message-content">
+          <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              <div class="sender-img">
+                <i class="fa fa-user-circle fa-fw fa-3x"></i>
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+              <div class="message-header">
+                <div class="sender-name">
+                  <h6>Mohammed Hamza</h6>
+                </div>
+              </div>
+              <div class="message-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium asperiores, doloribus est exercitationem ipsa, labore laborum necessitatibus nemo numquam quibusdam quod ratione recusandae unde voluptatibus! Cupiditate et nihil pariatur?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end message-->
       </div>
+      <!--end modal body-->
     </div>
   </div>
 </div>
--->

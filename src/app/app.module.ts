@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 //Components
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { FinalTableComponent } from './student-components/final-table/final-tabl
 
 //services
 import {TimetableService} from './student-services/timetable.service';
+import { LoginService } from './home-services/login.service';
 
 // our routes
 const appRoutes: Routes = [
@@ -41,11 +43,11 @@ const appRoutes: Routes = [
   { path: 'student', component: StudentComponent },
   {
     path: '',
-    redirectTo: '/student',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: PageNotFoundComponent }
-]
+  { path: '**', component: PageNotFoundComponent },
+];
 
 
 @NgModule({
@@ -79,9 +81,9 @@ const appRoutes: Routes = [
     FinalTableComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
   ],
-  providers: [TimetableService],
+  providers: [TimetableService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

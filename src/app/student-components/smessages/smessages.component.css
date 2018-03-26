@@ -1,8 +1,39 @@
-.alert{
+.modal-content{
     position: relative;
+    cursor: default;
+    background: #222;
+    color: #fff;
 }
-.alert button{
+.modal-content .close{
     position: absolute;
-    top: 5%;
+    color: #eee;
     right: 10px;
+    top: 18px;
+}
+.modal-content .modal-header{
+    border-color: #444;
+}
+.modal-content .modal-header h5{
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.modal-content .modal-body .message-content{
+    padding: 3px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+.modal-content .modal-body .message-content .message-header .sender-name h6{
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.modal-content .modal-body .message-content .message-body p{
+    padding-bottom: 10px;
+    color: #888;
 }
