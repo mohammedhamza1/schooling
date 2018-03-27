@@ -1,8 +1,8 @@
 .modal-content{
     position: relative;
-    cursor: default;
     background: #222;
     color: #fff;
+    cursor: default;
 }
 .modal-content .close{
     position: absolute;
@@ -23,6 +23,13 @@
     padding: 3px;
     margin-bottom: 10px;
     border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+.modal-content .modal-body .message-content .sender-img{
+    padding-top: 5px;
+}
+.modal-content .modal-body .message-content .row:hover{
+    background: #333;
 }
 .modal-content .modal-body .message-content .message-header .sender-name h6{
     padding: 0;
@@ -36,4 +43,5 @@
 .modal-content .modal-body .message-content .message-body p{
     padding-bottom: 10px;
     color: #888;
+    text-transform: none;
 }
