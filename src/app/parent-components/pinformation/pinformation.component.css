@@ -1,0 +1,32 @@
+.vcenter{
+    min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 70vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+.info-wrapper .sinfo{
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    color: #fff;
+}
+.info-wrapper .sinfo i{
+    z-index: 9999;
+    color: #fff;
+    font-size: 110px;
+}
+.info-wrapper .sinfo .sname{
+    padding: 25px 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.info-wrapper .sinfo .yearinfo span{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: bold;
+}

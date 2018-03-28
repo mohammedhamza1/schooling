@@ -36,6 +36,9 @@ import { ParentComponent } from './parent-components/parent/parent.component'
 //services
 import {TimetableService} from './student-services/timetable.service';
 import { LoginService } from './home-services/login.service';
+import { PnavbarComponent } from './parent-components/pnavbar/pnavbar.component';
+import { PfooterComponent } from './parent-components/pfooter/pfooter.component';
+import { PinformationComponent } from './parent-components/pinformation/pinformation.component';
 ;
 
 // our routes
@@ -81,7 +84,10 @@ const appRoutes: Routes = [
     LecturesTableComponent,
     MidtermTableComponent,
     FinalTableComponent,
-    ParentComponent
+    ParentComponent,
+    PnavbarComponent,
+    PfooterComponent,
+    PinformationComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
