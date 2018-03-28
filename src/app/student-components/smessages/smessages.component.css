@@ -1,28 +1,80 @@
 .modal-content{
     position: relative;
-    cursor: default;
     background: #222;
     color: #fff;
+    cursor: default;
 }
 .modal-content .close{
     position: absolute;
     color: #eee;
     right: 10px;
     top: 18px;
+    z-index: 9999999999999;
 }
 .modal-content .modal-header{
     border-color: #444;
+    position: relative;
 }
 .modal-content .modal-header h5{
     padding: 0;
     font-size: 20px;
     text-align: left;
     text-transform: capitalize;
+    display: inline;
+}
+.modal-content .modal-header .modal-color{
+    display: inline;
+    position: absolute;
+    right: 50px;
+    top: 12px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    z-index: 99999999999999999;
+}
+.modal-content .modal-header .modal-color .dark,
+.modal-content .modal-header .modal-color .light{
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+}
+.modal-content .modal-header .modal-color .light{
+    background: #fff;
+    cursor: pointer;
+
+}
+.modal-content .modal-header .modal-color .dark{
+    background: #222;
+    border-color: #222;
+    cursor: default;
+}
+.modal-content .modal-header .modal-color .dark:hover,
+.modal-content .modal-header .modal-color .light:hover,
+.modal-content .modal-header .modal-color .dark:focus,
+.modal-content .modal-header .modal-color .light:focus{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    color: #fff;
 }
 .modal-content .modal-body .message-content{
     padding: 3px;
     margin-bottom: 10px;
     border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+.modal-content .modal-body .message-content .sender-img{
+    padding-top: 5px;
+}
+.row-dark:hover{
+    background: #333;
+}
+.row-light:hover{
+    background: #eee;
 }
 .modal-content .modal-body .message-content .message-header .sender-name h6{
     padding: 0;
@@ -36,4 +88,5 @@
 .modal-content .modal-body .message-content .message-body p{
     padding-bottom: 10px;
     color: #888;
+    text-transform: none;
 }

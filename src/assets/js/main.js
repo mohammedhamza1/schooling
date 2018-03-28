@@ -7,7 +7,9 @@ $(document).ready(function () {
             scrollTop: $(this.hash).offset().top
         }, 1200);
     });
-    //Smooth-Scrolling 
+    //Smooth-Scrolling
+
+    // student component
     $('.stimetable h2 button').click(function () {
         $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
     });
@@ -19,6 +21,48 @@ $(document).ready(function () {
         $(this).removeClass('fa-envelope-open');
         $(this).addClass('fa-envelope');
     });
+    $('.modal-content .modal-body .message-content .row').mouseenter(function () {
+        $(this).addClass('row-dark');
+    });
+
+    $('.modal-color .light').on('click',function () {
+        $('.modal-content').css('background','#fff');
+        $('.modal-content .close').css('color','#000');
+        $('.modal-content .modal-header').css('border-color','#eee');
+        $('.modal-content .modal-header h5').css('color','#ed1c24');
+        $('.modal-content .modal-header .modal-color').css('border-color','#222');
+        $('.modal-content .modal-header .modal-color .light').css('cursor','default');
+        $('.modal-content .modal-header .modal-color .dark').css('cursor','pointer');
+        $('.modal-content .modal-body .message-content').css('border-color','#eee');
+        $('.modal-content .modal-body .message-content .sender-img').css('color','#444');
+        $('.modal-content .modal-body .message-content .row').mouseenter(function () {
+            $(this).removeClass('row-dark');
+            $(this).addClass('row-light');
+        });
+        $('.modal-content .modal-body .message-content .message-header .sender-name h6').css('color','#444');
+        $('.modal-content .modal-body .message-content .message-body p').css('color','#555');
+
+    });
+    $('.modal-color .dark').on('click',function () {
+        $('.modal-content').css('background','#222');
+        $('.modal-content .close').css('color','#eee');
+        $('.modal-content .modal-header').css('border-color','#444');
+        $('.modal-content .modal-header h5').css('color','#fff');
+        $('.modal-content .modal-header .modal-color').css('border-color','#fff');
+        $('.modal-content .modal-header .modal-color .dark').css('cursor','default');
+        $('.modal-content .modal-header .modal-color .light').css('cursor','pointer');
+        $('.modal-content .modal-body .message-content').css('border-color','#444');
+        $('.modal-content .modal-body .message-content .sender-img').css('color','#fff');
+        $('.modal-content .modal-body .message-content .row').mouseenter(function () {
+            $(this).removeClass('row-light');
+            $(this).addClass('row-dark');
+        });
+        $('.modal-content .modal-body .message-content .message-header .sender-name h6').css('color','#fff');
+        $('.modal-content .modal-body .message-content .message-body p').css('color','#888');
+    });
+
+    //end student component
+
     //requried-jsfiles-for owl 
     $("#owl-demo").owlCarousel({
         items: 3,
