@@ -32,15 +32,17 @@ import { SinformationComponent } from './student-components/sinformation/sinform
 import { LecturesTableComponent } from './student-components/lectures-table/lectures-table.component';
 import { MidtermTableComponent } from './student-components/midterm-table/midterm-table.component';
 import { FinalTableComponent } from './student-components/final-table/final-table.component';
-
+import { ParentComponent } from './parent-components/parent/parent.component'
 //services
 import {TimetableService} from './student-services/timetable.service';
 import { LoginService } from './home-services/login.service';
+;
 
 // our routes
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'student', component: StudentComponent },
+  { path: 'parent', component: ParentComponent },
   {
     path: '',
     redirectTo: '/home',
@@ -78,7 +80,8 @@ const appRoutes: Routes = [
     SinformationComponent,
     LecturesTableComponent,
     MidtermTableComponent,
-    FinalTableComponent
+    FinalTableComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
