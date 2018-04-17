@@ -3,6 +3,7 @@
     background: #333;
 }
 .pattendance .child-name{
+    position: relative;
     margin-bottom: 35px;
     color: #fff;
 }
@@ -17,6 +18,17 @@
     display: block;
     padding-left: 58px;
     text-align: left;
+}
+.pattendance .child-name a{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.pattendance .child-name a:hover,.pattendance .child-name a:focus{
+    color: #ed1c24;
 }
 .pattendance .child-attendance .check-attendance{
     float: right;
