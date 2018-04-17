@@ -1,0 +1,15 @@
+.pattendance{
+    padding: 40px 0;
+}
+.pattendance .child-name{
+    margin-bottom: 15px;
+}
+.pattendance .child-name h4{
+    display: inline;
+    padding: 0;
+    vertical-align: super;
+
+}
+.pattendance .child-attendance .check-attendance{
+    float: right;
+}

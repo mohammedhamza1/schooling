@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+//services
+import {TimetableService} from './student-services/timetable.service';
+import { LoginService } from './home-services/login.service';
 
 //Components
 import { AppComponent } from './app.component';
@@ -32,14 +35,11 @@ import { SinformationComponent } from './student-components/sinformation/sinform
 import { LecturesTableComponent } from './student-components/lectures-table/lectures-table.component';
 import { MidtermTableComponent } from './student-components/midterm-table/midterm-table.component';
 import { FinalTableComponent } from './student-components/final-table/final-table.component';
-import { ParentComponent } from './parent-components/parent/parent.component'
-//services
-import {TimetableService} from './student-services/timetable.service';
-import { LoginService } from './home-services/login.service';
+import { ParentComponent } from './parent-components/parent/parent.component';
 import { PnavbarComponent } from './parent-components/pnavbar/pnavbar.component';
 import { PfooterComponent } from './parent-components/pfooter/pfooter.component';
 import { PinformationComponent } from './parent-components/pinformation/pinformation.component';
-;
+import { PattendanceComponent } from './parent-components/pattendance/pattendance.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -87,7 +87,8 @@ const appRoutes: Routes = [
     ParentComponent,
     PnavbarComponent,
     PfooterComponent,
-    PinformationComponent
+    PinformationComponent,
+    PattendanceComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
