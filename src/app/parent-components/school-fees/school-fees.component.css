@@ -1,6 +1,9 @@
 .fees{
     background: #fff;
 }
+.fees .row{
+    margin: 0;
+}
 .fees .child-fees{
     padding: 0;
     color: #fff;
@@ -44,10 +47,4 @@
 .fees .child-fees .books-fees,
 .fees .child-fees .other-fees{
     padding: 30px 0;
-}
-
-
-@media (max-width: 575.98px) {
-
-
 }
