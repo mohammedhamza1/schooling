@@ -20,6 +20,7 @@
     text-transform: uppercase;
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .degrees .child-degrees .final-degrees h4 button,
 .degrees .child-degrees .year-degrees h4 button{
@@ -28,7 +29,13 @@
     color: #fff;
     border-color: #ed1c24;
     outline: #ed1c24;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    padding: 4px;
+
+}
+.degrees .child-degrees .final-degrees h4 button.btn-lg,
+.degrees .child-degrees .year-degrees h4 button.btn-lg{
+    padding: 7px;
 }
 
 
