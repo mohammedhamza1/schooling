@@ -40,6 +40,7 @@ import { PnavbarComponent } from './parent-components/pnavbar/pnavbar.component'
 import { PfooterComponent } from './parent-components/pfooter/pfooter.component';
 import { PinformationComponent } from './parent-components/pinformation/pinformation.component';
 import { PattendanceComponent } from './parent-components/pattendance/pattendance.component';
+import { SchoolFeesComponent } from './parent-components/school-fees/school-fees.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -88,7 +89,8 @@ const appRoutes: Routes = [
     PnavbarComponent,
     PfooterComponent,
     PinformationComponent,
-    PattendanceComponent
+    PattendanceComponent,
+    SchoolFeesComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
