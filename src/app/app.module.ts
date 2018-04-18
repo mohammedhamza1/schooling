@@ -41,6 +41,9 @@ import { PfooterComponent } from './parent-components/pfooter/pfooter.component'
 import { PinformationComponent } from './parent-components/pinformation/pinformation.component';
 import { PattendanceComponent } from './parent-components/pattendance/pattendance.component';
 import { SchoolFeesComponent } from './parent-components/school-fees/school-fees.component';
+import { DegreesComponent } from './parent-components/degrees/degrees.component';
+import { FinalDegreesComponent } from './parent-components/final-degrees/final-degrees.component';
+import { YearWorksDegreesComponent } from './parent-components/year-works-degrees/year-works-degrees.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -90,7 +93,10 @@ const appRoutes: Routes = [
     PfooterComponent,
     PinformationComponent,
     PattendanceComponent,
-    SchoolFeesComponent
+    SchoolFeesComponent,
+    DegreesComponent,
+    FinalDegreesComponent,
+    YearWorksDegreesComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule

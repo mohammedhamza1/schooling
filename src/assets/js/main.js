@@ -8,6 +8,10 @@ $(document).ready(function () {
         }, 1200);
     });
     //Smooth-Scrolling
+    // parent component
+    $('.degrees .child-degrees h4 button').click(function () {
+        $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
+    });
 
     // student component
     $('.stimetable h2 button').click(function () {

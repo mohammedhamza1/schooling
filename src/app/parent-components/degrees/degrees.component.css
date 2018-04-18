@@ -1,0 +1,44 @@
+.degrees{
+    padding: 30px 0;
+    background: #e5e5e5;
+}
+.degrees .child-name{
+    position: relative;
+    margin-bottom: 35px;
+    color: #000;
+}
+.degrees .child-name h4{
+    display: inline;
+    padding: 0;
+    vertical-align: super;
+    font-weight: bold;
+
+}
+.degrees .child-degrees .final-degrees h4,
+.degrees .child-degrees .year-degrees h4{
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+.degrees .child-degrees .final-degrees h4 button,
+.degrees .child-degrees .year-degrees h4 button{
+    text-transform: uppercase;
+    background: #ed1c24;
+    color: #fff;
+    border-color: #ed1c24;
+    outline: #ed1c24;
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .degrees .child-name h4{
+        font-size: 17px;
+    }
+    .degrees .child-name .fa{
+        font-size: 30px;
+    }
+
+}
