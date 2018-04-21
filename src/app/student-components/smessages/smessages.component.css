@@ -90,3 +90,9 @@
     color: #888;
     text-transform: none;
 }
+.modal-backdrop {
+    z-index: 9999999999999 !important;
+}
+.modal {
+    z-index: 99999999999999 !important;
+}

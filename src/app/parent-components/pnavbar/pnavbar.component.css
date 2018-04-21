@@ -4,6 +4,7 @@
     border: none;
     border-radius: 0;
     transition: all ease-in-out .4s;
+    z-index: 99999999999;
 }
 .navbar-collapse{
     background: transparent !important;
