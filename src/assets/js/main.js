@@ -66,6 +66,85 @@ $(document).ready(function () {
     });
 
     //end student component
+    
+    // navbar
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >=100){
+          $('.navbar').css({
+              'background':'#fff',
+              'boxShadow': '0px 1px 60px  -10px #777',
+              'padding':'10px'
+          });
+          $('.navbar-toggle').css({
+              'background':'#333',
+              'borderColor':'#fff'
+          });
+          $('.navbar .navbar-nav > li >a').css({
+              'color':'#222'
+          });
+          $('.navbar .navbar-nav > li').mouseenter(function () {
+              $(this).css('border-bottom','none')
+          });
+          $('.navbar .navbar-nav > li >a').mouseenter(function () {
+              $(this).css('color','#ed1c24');
+          });
+          $('.navbar .navbar-nav > li >a').mouseleave(function () {
+              $(this).css('color','#333');
+          });
+          $('#loginpop a span').css({
+              'color':'#333',
+              'borderColor':'#333'
+          });
+          $('#loginpop a span').mouseenter(function () {
+              $(this).css('border-color','#EE2B47');
+              $(this).css('color','#EE2B47');
+          });
+          $('#loginpop a span').mouseleave(function () {
+              $(this).css('border-color','#333');
+              $(this).css('color','#333');
+          });
+
+      }else {
+          $('.navbar').css({
+              'background':'transparent',
+              'boxShadow': 'none',
+              'padding':'0'
+          });
+          $('.navbar .navbar-nav > li >a').css({
+              'color':'#fff'
+          });
+          $('.navbar .navbar-nav > li').mouseenter(function () {
+              $(this).css('border-bottom','1px solid #ed1c24');
+          });
+          $('.navbar .navbar-nav > li').mouseleave(function () {
+              $(this).css('border-bottom','none')
+          });
+          $('.navbar .navbar-nav > li >a').mouseenter(function () {
+              $(this).css('color','#ed1c24');
+          });
+          $('.navbar .navbar-nav > li >a').mouseleave(function () {
+              $(this).css('color','#fff');
+          });
+          $('.navbar .navbar-nav > li.user').mouseenter(function () {
+              $(this).css('border-bottom','none')
+          });
+          $('#loginpop a span').css({
+              'color':'#fff',
+              'borderColor':'#fff'
+          });
+          $('#loginpop a span').mouseenter(function () {
+              $(this).css('border-color','#EE2B47');
+              $(this).css('color','#EE2B47');
+          });
+          $('#loginpop a span').mouseleave(function () {
+              $(this).css('border-color','#fff');
+              $(this).css('color','#fff');
+          });
+          $('.nav-login > li').mouseenter(function () {
+              $(this).css('border-bottom','none')
+          });
+      }
+    });
 
     //requried-jsfiles-for owl 
     $("#owl-demo").owlCarousel({
