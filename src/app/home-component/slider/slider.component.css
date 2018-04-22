@@ -31,6 +31,7 @@
     }
     .info-wrapper .sinfo h1{
         font-size: 34px;
+        padding: 0 5px;
         text-align: center;
     }
 }
