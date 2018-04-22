@@ -44,6 +44,8 @@ import { SchoolFeesComponent } from './parent-components/school-fees/school-fees
 import { DegreesComponent } from './parent-components/degrees/degrees.component';
 import { FinalDegreesComponent } from './parent-components/final-degrees/final-degrees.component';
 import { YearWorksDegreesComponent } from './parent-components/year-works-degrees/year-works-degrees.component';
+import { PevntsComponent } from './parent-components/pevnts/pevnts.component';
+import { PmessagesComponent } from './parent-components/pmessages/pmessages.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -96,7 +98,9 @@ const appRoutes: Routes = [
     SchoolFeesComponent,
     DegreesComponent,
     FinalDegreesComponent,
-    YearWorksDegreesComponent
+    YearWorksDegreesComponent,
+    PevntsComponent,
+    PmessagesComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
