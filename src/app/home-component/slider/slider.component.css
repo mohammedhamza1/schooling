@@ -8,14 +8,14 @@
     position: relative;
     height: 100%;
 }
-.info-wrapper .sinfo{
+.info-wrapper .hinfo{
     z-index: 99;
     text-align: center;
     color: #fff;
     top: 300px !important;
 }
 
-.info-wrapper .sinfo h1{
+.info-wrapper .hinfo h1{
     text-transform: uppercase;
     font-size: 50px;
     font-weight: bold;
@@ -25,11 +25,11 @@
 }
 
 @media (max-width: 575.98px){
-    .info-wrapper .sinfo{
+    .info-wrapper .hinfo{
         width: 90%;
         margin: auto;
     }
-    .info-wrapper .sinfo h1{
+    .info-wrapper .hinfo h1{
         font-size: 34px;
         padding: 0 5px;
         text-align: center;

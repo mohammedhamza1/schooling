@@ -7,7 +7,7 @@ $(document).ready(function () {
         });
     }
 
-    $('.info-wrapper .sinfo').centerany();
+    $('.info-wrapper .hinfo').centerany();
 
     $('.alert').alert();
     //Smooth-Scrolling 

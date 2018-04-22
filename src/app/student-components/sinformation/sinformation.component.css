@@ -9,6 +9,7 @@
     z-index: 99;
     text-align: center;
     color: #fff;
+    top: 50px;
 }
 .info-wrapper .sinfo i{
     z-index: 9999;
