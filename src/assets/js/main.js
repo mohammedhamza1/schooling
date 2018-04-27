@@ -76,7 +76,7 @@ $(document).ready(function () {
     });
 
     //end student component
-    
+
     // navbar
     $(window).scroll(function () {
       if ($(window).scrollTop() >=100){
