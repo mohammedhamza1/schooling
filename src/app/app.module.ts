@@ -47,6 +47,7 @@ import { YearWorksDegreesComponent } from './parent-components/year-works-degree
 import { PevntsComponent } from './parent-components/pevnts/pevnts.component';
 import { PmessagesComponent } from './parent-components/pmessages/pmessages.component';
 import { PcontactComponent } from './parent-components/pcontact/pcontact.component';
+import { AdminComponent } from './admin-components/admin/admin.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -102,7 +103,8 @@ const appRoutes: Routes = [
     YearWorksDegreesComponent,
     PevntsComponent,
     PmessagesComponent,
-    PcontactComponent
+    PcontactComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
