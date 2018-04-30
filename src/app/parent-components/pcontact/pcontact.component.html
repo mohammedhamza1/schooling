@@ -1,0 +1,81 @@
+<div class="contact slideanim" id="contact">
+    <h3>CONTACT</h3>
+    <div class="container">
+        <form class="contact_form" id="parentForm" #parentForm="ngForm" (submit)="sendMessage(parentForm.value)">
+            <div class="message">
+                <!--start select contact row-->
+                <div class="row">
+                    <!--start select contact-->
+                    <div class="select-contact">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="teacher">
+                                <div class="form-group">
+                                    <label class="pull-left" for="selectTeacher">Select teacher</label>
+                                    <select class="form-control" id="selectTeacher" name="teacher" [(ngModel)]="teacher" (click)="showTForm()">
+                                        <option>Mohammed</option>
+                                        <option>Ibrahem</option>
+                                        <option>Hamza</option>
+                                        <option>Salah</option>
+                                        <option>Eslam</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                        <div class="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
+                            <div class="admin">
+                                <div class="form-group">
+                                    <label class="pull-left" for="selectAdmin">Select Admin</label>
+                                    <select class="form-control" id="selectAdmin">
+                                        <option>Amira</option>
+                                        <option>Samir</option>
+                                        <option>Waleed</option>
+                                        <option>Hazem</option>
+                                        <option>Rasha</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end select contact-->
+                </div>
+                <!--end select contact row-->
+                <!--start teacher message-->
+                <div *ngIf="showAlert" class="succeed">
+                    <div class="alert alert-success" role="alert">
+                        <b>Your message successfully sent to</b> "{{parentMessage.teacher}}"
+                    </div>
+                </div>
+                <div *ngIf="showTeacherForm" class="teacher-message">
+                    <!--start receiver info row-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <!--start receiver info-->
+                            <div class="receiver-info text-center">
+                            <span class="to">Message to: <b class="receiver">{{teacher}}</b> -
+                                <b class="jop-title"> English teacher</b>
+                            </span>
+                            </div>
+                            <!--end receiver info-->
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end receiver info row-->
+                    <!--start message row-->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <textarea placeholder="Message" class="form-control" name="message" id="message" ngModel></textarea>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end message row-->
+                    <input type="submit" class="btn more_btn" value="Send Message">
+                </div>
+                <!--end teacher message-->
+                <div class="clearfix"></div>
+            </div>
+            <!--end message-->
+        </form>
+    </div>
+</div>

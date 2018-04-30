@@ -1,0 +1,50 @@
+.fees{
+    background: #fff;
+}
+.fees .row{
+    margin: 0;
+}
+.fees .child-fees{
+    padding: 0;
+    color: #fff;
+}
+.fees .child-fees .fa-money{
+    font-size: 40px;
+}
+.fees .child-fees h4{
+    padding: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.fees .child-fees .year{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.fees .child-fees .fees-status{
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+}
+.fees .child-fees .fees-status .money{
+    margin-right: 8px;
+    font-size: 22px;
+}
+.fees .child-fees .fees-status .fees-check{
+    font-size: 22px;
+}
+.fees .child-fees .school-fees{
+    background: #1FAD9F;
+}
+.fees .child-fees .books-fees{
+    background: #DC2F2F;
+}
+.fees .child-fees .other-fees{
+    background: #FF894C;
+}
+.fees .child-fees .school-fees,
+.fees .child-fees .books-fees,
+.fees .child-fees .other-fees{
+    padding: 30px 0;
+}

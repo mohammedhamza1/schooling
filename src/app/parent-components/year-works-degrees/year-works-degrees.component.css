@@ -1,0 +1,38 @@
+.year-works{
+    font-size: 17px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    border-color: #222;
+}
+.year-works thead tr th{
+    text-align: center;
+    border-color: #111111;
+    border-right: 1px solid #111;
+    padding: 12px 12px;
+    color: #999;
+    text-transform: capitalize;
+}
+.year-works tbody tr th{
+    background: #222;
+    color: #999;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    border-color: #000;
+}
+.year-works tbody tr td{
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    text-align: center;
+    border-right: 1px solid #111;
+    border-color: #111;
+}
+
+@media (max-width: 575.98px){
+
+}

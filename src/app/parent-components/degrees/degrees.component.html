@@ -1,0 +1,42 @@
+<div class="degrees slideanim" id="degrees">
+  <div class="container">
+    <div class="row">
+      <div class="child-name">
+        <i class="fa fa-user-circle-o fa-fw fa-3x"></i>
+        <h4 class="h3">Mohammed's Degrees</h4>
+      </div>
+      <!--end child name-->
+      <div class="col-md-6 col-sm-6 child-degrees">
+        <div class="final-degrees">
+          <h4 class="h4">final degrees</h4>
+          <h4>
+            <button (click)="showFirstFinal()" class="btn btn-danger">first semester</button>
+            <button (click)="showSecondFinal()" class="btn btn-danger btn-lg">second semester</button>
+          </h4>
+          <!--start final component-->
+          <app-final-degrees [firstFinal]="firstFinal" [secondFinal]="secondFinal"></app-final-degrees>
+          <!--end final component-->
+        </div>
+        <!--end final degrees-->
+      </div>
+      <!--end col child degrees-->
+      <div class="col-md-6 col-sm-6 child-degrees">
+        <div class="year-degrees">
+          <h4 class="h4">year's works</h4>
+          <h4>
+            <button (click)="showFirstYearWorks()" class="btn btn-danger">first semester</button>
+            <button (click)="showSecondYearWorks()" class="btn btn-danger btn-lg">second semester</button>
+          </h4>
+          <!--start year works component-->
+          <app-year-works-degrees [firstYearWorks]="firstYearWorks" [secondYearWorks]="secondYearWorks"></app-year-works-degrees>
+          <!--end year works component-->
+        </div>
+        <!--end year degrees-->
+      </div>
+      <!--end col child degrees-->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
+</div>
+<!--end degrees-->

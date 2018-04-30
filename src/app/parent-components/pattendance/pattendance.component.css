@@ -1,0 +1,87 @@
+.pattendance{
+    padding: 40px 0;
+    background: #333;
+}
+.pattendance .child-name{
+    position: relative;
+    margin-bottom: 35px;
+    color: #fff;
+}
+.pattendance .child-name h4{
+    display: inline;
+    padding: 0;
+    vertical-align: super;
+    font-weight: bold;
+
+}
+.pattendance .child-name span{
+    display: block;
+    padding-left: 58px;
+    text-align: left;
+}
+.pattendance .child-name a{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.pattendance .child-name a:hover,.pattendance .child-name a:focus{
+    color: #ed1c24;
+}
+.pattendance .child-attendance .check-attendance{
+    float: right;
+}
+.pattendance .child-attendance .check-attendance .fa{
+    line-height: 145%;
+    font-size: 30px !important;
+}
+.pattendance .child-attendance .check-attendance .fa-check-circle{
+    color: #4cae4c;
+}
+.pattendance .child-attendance .check-attendance .fa-times-circle{
+    color: #ed1c24;
+}
+.pattendance .child-attendance .list-group .list-group-item{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 8px 7px 20px;
+}
+.pattendance .child-attendance .list-group .list-group-item .fa-calendar{
+    position: relative;
+    top: 8px;
+    font-size: 22px;
+}
+.pattendance .child-attendance .list-group .list-group-item .day-date{
+    position: relative;
+}
+.pattendance .child-attendance .list-group .list-group-item .day-date .day{
+    font-size: 20px;
+}
+.pattendance .child-attendance .list-group .list-group-item .day-date .date{
+    position: absolute;
+    left: 1px;
+    top: 20px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 575.98px) {
+    .pattendance .child-name h4{
+        font-size: 17px;
+    }
+    .pattendance .child-name span{
+        padding-left: 43px;
+    }
+    .pattendance .child-name a{
+        display: none;
+    }
+    .pattendance .child-name .fa{
+        font-size: 30px;
+    }
+
+}

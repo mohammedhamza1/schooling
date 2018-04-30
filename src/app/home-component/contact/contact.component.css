@@ -9,6 +9,9 @@
 .contact h3{
     color: #fff;
 }
+.contact h3 span{
+    font-size: 25px;
+}
 div#contact {
     padding-bottom: 50px;
     border-bottom: 1px solid #EEE;
@@ -86,5 +89,12 @@ form.contact_form {
     background-color: #333;
     border-color: #333;
     cursor: pointer;
+}
+
+
+@media (max-width: 575.98px){
+    .contact h3 span{
+        font-size: 20px;
+    }
 }
 /*-- //Contact-Ends-Here --*/

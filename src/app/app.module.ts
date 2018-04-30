@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+//services
+import {TimetableService} from './student-services/timetable.service';
+import { LoginService } from './home-services/login.service';
 
 //Components
 import { AppComponent } from './app.component';
@@ -32,15 +35,24 @@ import { SinformationComponent } from './student-components/sinformation/sinform
 import { LecturesTableComponent } from './student-components/lectures-table/lectures-table.component';
 import { MidtermTableComponent } from './student-components/midterm-table/midterm-table.component';
 import { FinalTableComponent } from './student-components/final-table/final-table.component';
-
-//services
-import {TimetableService} from './student-services/timetable.service';
-import { LoginService } from './home-services/login.service';
+import { ParentComponent } from './parent-components/parent/parent.component';
+import { PnavbarComponent } from './parent-components/pnavbar/pnavbar.component';
+import { PfooterComponent } from './parent-components/pfooter/pfooter.component';
+import { PinformationComponent } from './parent-components/pinformation/pinformation.component';
+import { PattendanceComponent } from './parent-components/pattendance/pattendance.component';
+import { SchoolFeesComponent } from './parent-components/school-fees/school-fees.component';
+import { DegreesComponent } from './parent-components/degrees/degrees.component';
+import { FinalDegreesComponent } from './parent-components/final-degrees/final-degrees.component';
+import { YearWorksDegreesComponent } from './parent-components/year-works-degrees/year-works-degrees.component';
+import { PevntsComponent } from './parent-components/pevnts/pevnts.component';
+import { PmessagesComponent } from './parent-components/pmessages/pmessages.component';
+import { PcontactComponent } from './parent-components/pcontact/pcontact.component';
 
 // our routes
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'student', component: StudentComponent },
+  { path: 'parent', component: ParentComponent },
   {
     path: '',
     redirectTo: '/home',
@@ -78,7 +90,19 @@ const appRoutes: Routes = [
     SinformationComponent,
     LecturesTableComponent,
     MidtermTableComponent,
-    FinalTableComponent
+    FinalTableComponent,
+    ParentComponent,
+    PnavbarComponent,
+    PfooterComponent,
+    PinformationComponent,
+    PattendanceComponent,
+    SchoolFeesComponent,
+    DegreesComponent,
+    FinalDegreesComponent,
+    YearWorksDegreesComponent,
+    PevntsComponent,
+    PmessagesComponent,
+    PcontactComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule

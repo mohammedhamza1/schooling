@@ -4,19 +4,34 @@
     display: flex;
     align-items: center;
 }
-.info-wrapper .sinfo{
+.info-wrapper{
     position: relative;
+    height: 100%;
+}
+.info-wrapper .hinfo{
     z-index: 99;
     text-align: center;
     color: #fff;
+    top: 300px !important;
 }
 
-.info-wrapper .sinfo h1{
+.info-wrapper .hinfo h1{
     text-transform: uppercase;
     font-size: 50px;
-    margin-top: 50px;
-    line-height: 70px;
     font-weight: bold;
     letter-spacing: 3px;
     text-align: left;
+    padding: 0;
+}
+
+@media (max-width: 575.98px){
+    .info-wrapper .hinfo{
+        width: 90%;
+        margin: auto;
+    }
+    .info-wrapper .hinfo h1{
+        font-size: 34px;
+        padding: 0 5px;
+        text-align: center;
+    }
 }

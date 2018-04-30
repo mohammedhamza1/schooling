@@ -19,6 +19,8 @@ export class LoginComponent implements OnInit {
        if (userInformation.email === 'student' && userInformation.password === 'student'){
            this.userLogged.setUserLoggedIn();
            this._router.navigate(['student']);
+       } else if(userInformation.email === 'parent' && userInformation.password === 'parent'){
+           this._router.navigate(['parent']);
        }
     }
 }
