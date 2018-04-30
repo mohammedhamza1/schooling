@@ -48,6 +48,10 @@ import {PevntsComponent} from './parent-components/pevnts/pevnts.component';
 import {PmessagesComponent} from './parent-components/pmessages/pmessages.component';
 import {PcontactComponent} from './parent-components/pcontact/pcontact.component';
 import {AdminComponent} from './admin-components/admin/admin.component';
+import { AnavbarComponent } from './admin-components/anavbar/anavbar.component';
+import { AinformationsComponent } from './admin-components/ainformations/ainformations.component';
+import { AmessagesComponent } from './admin-components/amessages/amessages.component';
+import { AfooterComponent } from './admin-components/afooter/afooter.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -105,7 +109,11 @@ const appRoutes: Routes = [
         PevntsComponent,
         PmessagesComponent,
         PcontactComponent,
-        AdminComponent
+        AdminComponent,
+        AnavbarComponent,
+        AinformationsComponent,
+        AmessagesComponent,
+        AfooterComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
