@@ -52,6 +52,8 @@ import { AnavbarComponent } from './admin-components/anavbar/anavbar.component';
 import { AinformationsComponent } from './admin-components/ainformations/ainformations.component';
 import { AmessagesComponent } from './admin-components/amessages/amessages.component';
 import { AfooterComponent } from './admin-components/afooter/afooter.component';
+import { StaffComponent } from './admin-components/staff/staff.component';
+import { AteachersComponent } from './admin-components/ateachers/ateachers.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -113,7 +115,9 @@ const appRoutes: Routes = [
         AnavbarComponent,
         AinformationsComponent,
         AmessagesComponent,
-        AfooterComponent
+        AfooterComponent,
+        StaffComponent,
+        AteachersComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule

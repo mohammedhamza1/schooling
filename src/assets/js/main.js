@@ -18,15 +18,13 @@ $(document).ready(function () {
         }, 1200);
     });
     //Smooth-Scrolling
-    // parent component
-    $('.degrees .child-degrees h4 button').click(function () {
+
+    // admin component
+    $('.staff h2 button , .stimetable h2 button , .degrees .child-degrees h4 button').click(function () {
         $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
     });
 
-    // student component
-    $('.stimetable h2 button').click(function () {
-        $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
-    });
+    // messages components
     $('.modalbtn').on('mouseenter',function () {
         $(this).removeClass('fa-envelope');
         $(this).addClass('fa-envelope-open');
@@ -75,7 +73,7 @@ $(document).ready(function () {
         $('.modal-content .modal-body .message-content .message-body p').css('color','#888');
     });
 
-    //end student component
+    // end messages component //
 
     // navbar
     $(window).scroll(function () {
