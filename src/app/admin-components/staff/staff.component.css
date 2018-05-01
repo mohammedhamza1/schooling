@@ -1,0 +1,8 @@
+.staff h2 .btn{
+    background: #ed1c24;
+    color: #fff;
+    text-transform: uppercase;
+    border-color: #ed1c24;
+    outline: #ed1c24;
+    margin-bottom: 5px;
+}
