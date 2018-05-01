@@ -50,6 +50,10 @@ body a:focus {
     0% {transform: rotate(0deg)}
     100% {transform: rotate(360deg)}
 }
+.navbar-nav li a {
+    text-transform: capitalize;
+}
+
 input[type="button"],input[type="submit"] {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
