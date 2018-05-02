@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 //services
 import {TimetableService} from './student-services/timetable.service';
 import {LoginService} from './home-services/login.service';
@@ -49,12 +50,12 @@ import {PevntsComponent} from './parent-components/pevnts/pevnts.component';
 import {PmessagesComponent} from './parent-components/pmessages/pmessages.component';
 import {PcontactComponent} from './parent-components/pcontact/pcontact.component';
 import {AdminComponent} from './admin-components/admin/admin.component';
-import { AnavbarComponent } from './admin-components/anavbar/anavbar.component';
-import { AinformationsComponent } from './admin-components/ainformations/ainformations.component';
-import { AmessagesComponent } from './admin-components/amessages/amessages.component';
-import { AfooterComponent } from './admin-components/afooter/afooter.component';
-import { StaffComponent } from './admin-components/staff/staff.component';
-import { AteachersComponent } from './admin-components/ateachers/ateachers.component';
+import {AnavbarComponent} from './admin-components/anavbar/anavbar.component';
+import {AinformationsComponent} from './admin-components/ainformations/ainformations.component';
+import {AmessagesComponent} from './admin-components/amessages/amessages.component';
+import {AfooterComponent} from './admin-components/afooter/afooter.component';
+import {StaffComponent} from './admin-components/staff/staff.component';
+import {AteachersComponent} from './admin-components/ateachers/ateachers.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -121,7 +122,7 @@ const appRoutes: Routes = [
         AteachersComponent
     ],
     imports: [
-        BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
+        BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule
     ],
     providers: [TimetableService, LoginService, AteachersService],
     bootstrap: [AppComponent]

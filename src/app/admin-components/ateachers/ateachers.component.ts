@@ -7,10 +7,16 @@ import {AteachersService} from '../../admin-services/ateachers.service';
     styleUrls: ['./ateachers.component.css']
 })
 export class AteachersComponent implements OnInit {
+    users: any;
 
     constructor(
         private teachersTable: AteachersService,
     ) {
+        this.teachersTable.getUsers().subscribe(
+            data => {
+                this.users = data;
+            }
+        );
     }
 
     ngOnInit() {
