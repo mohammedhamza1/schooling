@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {AteachersService} from '../../admin-services/ateachers.service';
 
 @Component({
     selector: 'app-ateachers',
@@ -7,7 +8,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AteachersComponent implements OnInit {
 
-    constructor() {
+    constructor(
+        private teachersTable: AteachersService,
+    ) {
     }
 
     ngOnInit() {

@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 //services
 import {TimetableService} from './student-services/timetable.service';
 import {LoginService} from './home-services/login.service';
+import {AteachersService} from './admin-services/ateachers.service';
 
 //Components
 import {AppComponent} from './app.component';
@@ -122,7 +123,7 @@ const appRoutes: Routes = [
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule
     ],
-    providers: [TimetableService, LoginService],
+    providers: [TimetableService, LoginService, AteachersService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
