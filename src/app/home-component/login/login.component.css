@@ -1,1 +1,70 @@
-/* in main style.css*/
+.loginbtn{
+    position: relative;
+    top: 15px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 7px 20px;
+    margin-top: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.loginbtn:hover{
+    background: transparent;
+    color: #EE2B47;
+    border-color: #EE2B47;
+}
+.modal-content .modal-header{
+    border-color: transparent;
+    text-align: center;
+}
+.modal-content .modal-header h5{
+    padding: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+    color: #ed1c24;
+}
+.modal-body form input:focus{
+    border-color: #fb5b61;
+    box-shadow: 0px 1px 17px -6px #999;
+}
+.modal-body form input,.modal-body form .submit,.modal-body form .reset{
+    width: 60%;
+    margin: auto;
+    transition: all ease-in-out .3s;
+}
+.modal-body form .submit{
+    display: block;
+    background: #ed1c24;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.modal-body form .submit:focus, .modal-body form .submit:hover{
+    background: #fb5b61;
+    border-color: #fb5b61;
+    box-shadow: 0px 1px 17px -6px #ed1c24;
+}
+.modal-body form .reset{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.modal-body form .reset a{
+    color: #222;
+}
+.modal-body form .reset a:hover{
+    color: #ed1c24;
+}
+
+
+@media (max-width: 1200px) {
+    .loginbtn{
+        top: 0;
+        left: 5px;
+    }
+}

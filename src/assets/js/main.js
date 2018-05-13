@@ -25,14 +25,14 @@ $(document).ready(function () {
     });
 
     // messages components
-    $('.modalbtn').on('mouseenter',function () {
-        $(this).removeClass('fa-envelope');
-        $(this).addClass('fa-envelope-open');
-    });
-    $('.modalbtn').on('mouseleave',function () {
-        $(this).removeClass('fa-envelope-open');
-        $(this).addClass('fa-envelope');
-    });
+    // $('.modalbtn').on('mouseenter',function () {
+    //     $(this).removeClass('fa-envelope');
+    //     $(this).addClass('fa-envelope-open');
+    // });
+    // $('.modalbtn').on('mouseleave',function () {
+    //     $(this).removeClass('fa-envelope-open');
+    //     $(this).addClass('fa-envelope');
+    // });
     $('.modal-content .modal-body .message-content .row').mouseenter(function () {
         $(this).addClass('row-dark');
     });
@@ -99,15 +99,15 @@ $(document).ready(function () {
           $('.navbar .navbar-nav > li >a').mouseleave(function () {
               $(this).css('color','#333');
           });
-          $('#loginpop a span').css({
+          $('.loginbtn').css({
               'color':'#333',
               'borderColor':'#333'
           });
-          $('#loginpop a span').mouseenter(function () {
+          $('.loginbtn').mouseenter(function () {
               $(this).css('border-color','#EE2B47');
               $(this).css('color','#EE2B47');
           });
-          $('#loginpop a span').mouseleave(function () {
+          $('.loginbtn').mouseleave(function () {
               $(this).css('border-color','#333');
               $(this).css('color','#333');
           });
@@ -136,15 +136,15 @@ $(document).ready(function () {
           $('.navbar .navbar-nav > li.user').mouseenter(function () {
               $(this).css('border-bottom','none')
           });
-          $('#loginpop a span').css({
+          $('.loginbtn').css({
               'color':'#fff',
               'borderColor':'#fff'
           });
-          $('#loginpop a span').mouseenter(function () {
+          $('.loginbtn').mouseenter(function () {
               $(this).css('border-color','#EE2B47');
               $(this).css('color','#EE2B47');
           });
-          $('#loginpop a span').mouseleave(function () {
+          $('.loginbtn').mouseleave(function () {
               $(this).css('border-color','#fff');
               $(this).css('color','#fff');
           });
