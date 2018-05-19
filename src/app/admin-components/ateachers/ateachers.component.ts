@@ -8,6 +8,8 @@ import {AteachersService} from '../../admin-services/ateachers.service';
 })
 export class AteachersComponent implements OnInit {
     users: any;
+    p: number;
+    collectionArray: any;
 
     constructor(
         private teachersTable: AteachersService,
@@ -20,6 +22,11 @@ export class AteachersComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.p = 1;
+        this.collectionArray = [];
+        for (let i = 1; i <= 100; i++) {
+            this.collectionArray.push('Test '+ i);
+        }
     }
 
 }

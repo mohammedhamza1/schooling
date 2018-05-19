@@ -1,9 +1,13 @@
-<ul class="list-unstyled">
-    <li *ngFor="let user of users">
-        ID: {{user.id}}
-        <br>
-        Name: {{user.name}}
-        <br>
-        Email: {{user.email}}
+<!--<ul class="list-unstyled">-->
+    <!--<li *ngFor="let user of users">-->
+        <!--Name: {{user.name}}-->
+        <!--<br>-->
+        <!--Email: {{user.email}}-->
+    <!--</li>-->
+<!--</ul>-->
+<ul>
+    <li *ngFor="let x of collectionArray | paginate: { itemsPerPage: 10, currentPage: p }">
+        {{x}}
     </li>
 </ul>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

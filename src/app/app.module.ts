@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {NgxPaginationModule} from  'ngx-pagination';
 //services
 import {TimetableService} from './student-services/timetable.service';
 import {LoginService} from './home-services/login.service';
@@ -122,7 +123,7 @@ const appRoutes: Routes = [
         AteachersComponent
     ],
     imports: [
-        BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule
+        BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule
     ],
     providers: [TimetableService, LoginService, AteachersService],
     bootstrap: [AppComponent]
