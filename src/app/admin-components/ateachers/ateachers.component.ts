@@ -9,7 +9,7 @@ import {AteachersService} from '../../admin-services/ateachers.service';
 export class AteachersComponent implements OnInit {
     users: any;
     p: number;
-    collectionArray: any;
+    teacherArray: object[];
 
     constructor(
         private teachersTable: AteachersService,
@@ -23,10 +23,88 @@ export class AteachersComponent implements OnInit {
 
     ngOnInit() {
         this.p = 1;
-        this.collectionArray = [];
-        for (let i = 1; i <= 100; i++) {
-            this.collectionArray.push('Test '+ i);
-        }
+        this.teacherArray = [
+            {
+                id: 1,
+                fname: 'ramadan',
+                lname: 'mabrouk',
+                course: 'english',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 2,
+                fname: 'ahmed',
+                lname: 'hesham',
+                course: 'arabic',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 3,
+                fname: 'mohammed',
+                lname: 'hamza',
+                course: 'science',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 4,
+                fname: 'ali',
+                lname: 'ahmed',
+                course: 'history',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 5,
+                fname: 'hazem',
+                lname: 'ali',
+                course: 'biology',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 6,
+                fname: 'mervet',
+                lname: 'mabrouk',
+                course: 'mathematics',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 7,
+                fname: 'amira',
+                lname: 'hassan',
+                course: 'english',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                fname: 'hassan',
+                lname: 'hamza',
+                course: 'arabic',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 8,
+                fname: 'hamza',
+                lname: 'ramadan',
+                course: 'history',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+            {
+                id: 9,
+                fname: 'ramadan',
+                lname: 'hamza',
+                course: 'arabic',
+                year: '4th',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim eos, esse fugiat rem voluptatum.'
+            },
+        ];
+
     }
 
 }

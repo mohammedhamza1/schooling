@@ -1,0 +1,91 @@
+.teacher{
+    cursor: pointer;
+}
+.modal{
+    z-index: 99999999999999;
+}
+.modal-content{
+    position: relative;
+    cursor: default;
+}
+.modal-content .close{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    z-index: 9999999999999;
+}
+.modal-content .modal-header{
+    position: relative;
+}
+.modal-content .modal-header h5{
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    display: inline;
+}
+/*-- Events-Starts-Here --*/
+.events{
+    background: #333;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.events h3{
+    text-transform: uppercase;
+}
+.event .event-body {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.event .event-body .title{
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.event .event-body .when{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.event .event-body .when .from{
+    margin-right: 5px;
+}
+.event .event-body .when .to{
+    margin-left: 5px;
+}
+.event .event-body .when .from .date,
+.event .event-body .when .from .time,
+.event .event-body .when .to .date,
+.event .event-body .when .to .time{
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+}
+.teacherPagination{
+    padding: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+form label{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+form textarea{
+    resize: none;
+}
+form button{
+    background: #ed1c24;
+    color: #fff;
+    text-transform: uppercase;
+    border-color: #ed1c24;
+    outline: #ed1c24;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 115px;
+}
