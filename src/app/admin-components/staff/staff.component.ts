@@ -13,8 +13,8 @@ export class StaffComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.showTeachersTable = true;
-        this.showClassesTable = false;
+        this.showTeachersTable = false;
+        this.showClassesTable = true;
     }
 
     showTeachers() {
