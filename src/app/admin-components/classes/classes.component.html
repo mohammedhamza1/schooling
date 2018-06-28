@@ -1,0 +1,52 @@
+<!--*ngFor="let teacher of teacherArray | paginate: { itemsPerPage: 2, currentPage: p }"-->
+<div class="classes">
+    <div class="overlay">
+        <div class="class-info" *ngFor="let class of classesArray | paginate: { itemsPerPage: 1, currentPage: p }">
+            <h2>Class <span class="badge badge-danger">{{class.name}}</span></h2>
+            <h6>
+                <span class="year">level {{class.level}}</span>
+                <span class="num">{{class.studentsNum}} student</span>
+            </h6>
+        </div>
+        <h6 class="class-btns">
+            <span class="message">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger  messagebtn" data-toggle="modal" data-target="#classModal">
+                    send message
+                </button>
+
+                <div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="classModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">What's happening?</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-lg center-block">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+                <span class="students">
+                <button type="button" class="btn btn-danger  view-students">
+                    View students
+                </button>
+            </span>
+        </h6>
+    </div>
+</div>
+<div class="col-sm-12 col-md-12">
+    <h2 class="classesPagination">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </h2>
+</div>

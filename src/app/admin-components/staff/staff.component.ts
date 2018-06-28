@@ -7,23 +7,23 @@ import {Component, OnInit} from '@angular/core';
 })
 export class StaffComponent implements OnInit {
     showTeachersTable: boolean;
-    showStaffTable: boolean;
+    showClassesTable: boolean;
 
     constructor() {
     }
 
     ngOnInit() {
         this.showTeachersTable = true;
-        this.showStaffTable = false;
+        this.showClassesTable = false;
     }
 
     showTeachers() {
-        this.showStaffTable = false;
+        this.showClassesTable = false;
         this.showTeachersTable = true;
     }
-    showStaff(){
+    showClasses(){
         this.showTeachersTable = false;
-        this.showStaffTable = true;
+        this.showClassesTable = true;
     }
 
 }

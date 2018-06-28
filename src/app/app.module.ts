@@ -57,6 +57,7 @@ import {AmessagesComponent} from './admin-components/amessages/amessages.compone
 import {AfooterComponent} from './admin-components/afooter/afooter.component';
 import {StaffComponent} from './admin-components/staff/staff.component';
 import {AteachersComponent} from './admin-components/ateachers/ateachers.component';
+import { ClassesComponent } from './admin-components/classes/classes.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -120,7 +121,8 @@ const appRoutes: Routes = [
         AmessagesComponent,
         AfooterComponent,
         StaffComponent,
-        AteachersComponent
+        AteachersComponent,
+        ClassesComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule
