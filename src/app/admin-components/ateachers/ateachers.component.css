@@ -16,6 +16,7 @@
 }
 .modal-content .modal-header{
     position: relative;
+    border: none;
 }
 .modal-content .modal-header h5{
     padding: 0;
