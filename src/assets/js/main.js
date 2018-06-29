@@ -204,4 +204,14 @@ $(document).ready(function () {
             }
         });
     });
+
+    $("body").niceScroll(
+        {
+            cursorcolor:"#ed1c24",
+            cursorwidth:"10px",
+            cursorborder:"none",
+            cursorborderradius:"5px"
+        }
+    );
+
 });
