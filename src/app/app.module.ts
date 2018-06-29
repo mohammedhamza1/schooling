@@ -58,6 +58,9 @@ import {AfooterComponent} from './admin-components/afooter/afooter.component';
 import {StaffComponent} from './admin-components/staff/staff.component';
 import {AteachersComponent} from './admin-components/ateachers/ateachers.component';
 import { ClassesComponent } from './admin-components/classes/classes.component';
+import { AnotificationsComponent } from './admin-components/anotifications/anotifications.component';
+import { PnotificationsComponent } from './parent-components/pnotifications/pnotifications.component';
+import { SnotificationsComponent } from './student-components/snotifications/snotifications.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -122,7 +125,10 @@ const appRoutes: Routes = [
         AfooterComponent,
         StaffComponent,
         AteachersComponent,
-        ClassesComponent
+        ClassesComponent,
+        AnotificationsComponent,
+        PnotificationsComponent,
+        SnotificationsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule
