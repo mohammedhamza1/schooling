@@ -56,11 +56,12 @@ import {AinformationsComponent} from './admin-components/ainformations/ainformat
 import {AmessagesComponent} from './admin-components/amessages/amessages.component';
 import {AfooterComponent} from './admin-components/afooter/afooter.component';
 import {StaffComponent} from './admin-components/staff/staff.component';
-import {AteachersComponent} from './admin-components/ateachers/ateachers.component';
-import { ClassesComponent } from './admin-components/classes/classes.component';
+import {AteachersComponent} from './admin-components/staff/ateachers/ateachers.component';
+import { ClassesComponent } from './admin-components/staff/classes/classes.component';
 import { AnotificationsComponent } from './admin-components/anotifications/anotifications.component';
 import { PnotificationsComponent } from './parent-components/pnotifications/pnotifications.component';
 import { SnotificationsComponent } from './student-components/snotifications/snotifications.component';
+import { AparentsComponent } from './admin-components/aparents/aparents.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -128,7 +129,8 @@ const appRoutes: Routes = [
         ClassesComponent,
         AnotificationsComponent,
         PnotificationsComponent,
-        SnotificationsComponent
+        SnotificationsComponent,
+        AparentsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule
