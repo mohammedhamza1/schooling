@@ -1,0 +1,11 @@
+<div class="staff slidanim" id="events">
+    <div class="overlay">
+        <h2>
+            <button (click)="showEvents()" class="btn btn-danger btn-lg">Post event</button>
+            <button (click)="showNews()" class="btn btn-danger">write post</button>
+        </h2>
+        <section>
+            <app-aevents *ngIf="showEventsSection"></app-aevents>
+        </section>
+    </div>
+</div>

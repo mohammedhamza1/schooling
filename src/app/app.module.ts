@@ -63,6 +63,8 @@ import { AnotificationsComponent } from './admin-components/anotifications/anoti
 import { PnotificationsComponent } from './parent-components/pnotifications/pnotifications.component';
 import { SnotificationsComponent } from './student-components/snotifications/snotifications.component';
 import { AparentsComponent } from './admin-components/aparents/aparents.component';
+import { AeventsComponent } from './admin-components/aevents-and-news/aevents/aevents.component';
+import { AeventsAndNewsComponent } from './admin-components/aevents-and-news/aevents-and-news.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -131,7 +133,9 @@ const appRoutes: Routes = [
         AnotificationsComponent,
         PnotificationsComponent,
         SnotificationsComponent,
-        AparentsComponent
+        AparentsComponent,
+        AeventsComponent,
+        AeventsAndNewsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
