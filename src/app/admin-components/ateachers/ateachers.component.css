@@ -77,10 +77,16 @@ form label{
     text-transform: uppercase;
     font-size: 20px;
 }
-form textarea{
+form textarea {
     resize: none;
+    font-size: 20px;
+    font-family: 'OpenSans-Regular';
+    width: 96%;
+    margin: auto;
+    margin-top: 10px;
 }
-form button{
+
+form button {
     background: #ed1c24;
     color: #fff;
     text-transform: uppercase;
@@ -89,4 +95,9 @@ form button{
     margin-bottom: 5px;
     padding: 10px;
     width: 115px;
+    transition: all ease-in-out .3s;
+}
+form button:hover, form button:focus {
+    background: #fd2f37;
+    border-color: #fd2f37;
 }
