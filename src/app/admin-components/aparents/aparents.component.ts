@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-aparents',
-  templateUrl: './aparents.component.html',
-  styleUrls: ['./aparents.component.css']
+    selector: 'app-aparents',
+    templateUrl: './aparents.component.html',
+    styleUrls: ['./aparents.component.css']
 })
 export class AparentsComponent implements OnInit {
+    items: any;
+    term: any;
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.items = [
+            {name: 'archie'}, {name: 'jake'}, {name: 'richard'}
+        ];
+    }
 
 }
