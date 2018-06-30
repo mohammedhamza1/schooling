@@ -1,14 +1,43 @@
+<div class="aparents slidanim" id="parents">
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-12">
-            <div>
-                <input type="text" [(ngModel)]="term">
-                <div *ngFor="let item of items |filter:term">
-                    <p *ngIf="term">
-                        <a href="">{{item.name}}</a>
-                    </p>
+        <h3>Select parent to contact with</h3>
+        <div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4">
+            <div class="parent-form-wrapper">
+                <input type="text" class="form-control" placeholder="Find a parent" [(ngModel)]="term">
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4">
+            <!--student-->
+            <div class="parent" *ngFor="let parent of parentsArray |filter:term">
+                <p class="parent-wrapper" *ngIf="term">
+                    <a class="parent-name" data-toggle="collapse" href="#parentsCollapse{{parent.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="badge badge-danger">{{parent.id}}</span>
+                        {{parent.fname}} {{parent.lname}}
+                    </a>
+                </p>
+                <div class="collapse" id="parentsCollapse{{parent.id}}">
+                    <div class="card card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <textarea class="form-control" id="studentMessage" rows="5" placeholder="write a message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-lg center-block">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <!--end student-->
         </div>
     </div>
 </div>
+
+
+<!--<div class="form-group">-->
+    <!---->
+    <!--<div *ngFor="let item of items |filter:term">-->
+        <!--<p *ngIf="term"><a>-->
+            <!--{{item.name}}-->
+        <!--</a></p>-->
+    <!--</div>-->
+<!--</div>-->
