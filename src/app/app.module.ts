@@ -74,6 +74,7 @@ const appRoutes: Routes = [
     {path: 'student', component: StudentComponent},
     {path: 'parent', component: ParentComponent},
     {path: 'admin', component: AdminComponent},
+    {path: 'teacher', component: TeacherComponent},
     {
         path: '',
         redirectTo: '/home',
