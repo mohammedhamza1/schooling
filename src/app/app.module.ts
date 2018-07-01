@@ -65,6 +65,7 @@ import { SnotificationsComponent } from './student-components/snotifications/sno
 import { AparentsComponent } from './admin-components/aparents/aparents.component';
 import { AeventsComponent } from './admin-components/aevents-and-news/aevents/aevents.component';
 import { AeventsAndNewsComponent } from './admin-components/aevents-and-news/aevents-and-news.component';
+import { AnewsComponent } from './admin-components/aevents-and-news/anews/anews.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -135,7 +136,8 @@ const appRoutes: Routes = [
         SnotificationsComponent,
         AparentsComponent,
         AeventsComponent,
-        AeventsAndNewsComponent
+        AeventsAndNewsComponent,
+        AnewsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
