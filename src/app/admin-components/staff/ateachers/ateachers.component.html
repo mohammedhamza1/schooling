@@ -1,0 +1,71 @@
+<!--start teacher-->
+    <div class="col-sm-6 col-md-6" *ngFor="let teacher of teacherArray | paginate: { itemsPerPage: 2, currentPage: p }">
+        <!-- Button trigger modal -->
+        <div class="teacher" data-toggle="modal" data-target="#teacherModal">
+            <!--start event-->
+            <div class="event">
+                <div class="col-sm-2 col-md-2">
+                    <div class="event-img">
+                        <i class="fa fa-user-circle-o fa-fw fa-4x"></i>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <!--start bost-->
+                    <div class="event-body">
+                        <h6 class="title">{{teacher.fname}} {{teacher.lname}}</h6>
+                        <!--start when-->
+                        <div class="when">
+                        <span class="from">
+                          <span class="date">
+                            <i class="fa fa-calendar-check-o"></i>
+                             {{teacher.course}} Teacher
+                          </span>
+                        </span>
+                            to
+                            <span class="to">
+                          <span class="date">
+                            <i class="fa fa-calendar-check-o"></i>
+                             {{teacher.year}} Year
+                          </span>
+                        </span>
+                        </div>
+                        <!--end when-->
+                        <p class="event-desc">
+                            {{teacher.desc}}
+                        </p>
+                    </div>
+                    <!--end body-->
+                </div>
+            </div>
+            <!--end event-->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="teacherModal" tabindex="-1" role="dialog" aria-labelledby="teacherModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Send message?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-lg center-block">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--end teacher-->
+<div class="col-sm-12 col-md-12">
+    <h2 class="teacherPagination">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </h2>
+</div>

@@ -1,0 +1,14 @@
+<div class="staff slidanim" id="staff">
+    <h2>
+        <button (click)="showClasses()" class="btn btn-danger btn-lg">Classes</button>
+        <button (click)="showTeachers()" class="btn btn-danger">Teachers</button>
+    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <app-ateachers *ngIf="showTeachersTable"></app-ateachers>
+                <app-classes *ngIf="showClassesTable"></app-classes>
+            </div>
+        </div>
+    </div>
+</div>

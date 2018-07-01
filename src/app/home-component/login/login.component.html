@@ -1,31 +1,35 @@
-<div class="login-pop">
-  <div id="loginpop">
-    <a href="#" id="loginButton">
-      <span>Login</span>
-    </a>
-    <div id="loginBox">
-      <form id="loginForm" #userLogin="ngForm" (submit)="sendUser(userLogin.value)">
-        <fieldset id="body">
-          <fieldset class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" name="email" id="email" ngModel>
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="password">Password</label>
-            <input type="password" required class="form-control" name="password" id="password" ngModel>
-          </fieldset>
-          <input type="submit" class="btn" id="login" value="LOGIN">
-          <div class="form-check">
-            <label for="checkbox">
-              <input type="checkbox" class="form-check-input" name="remember" id="checkbox" ngModel>
-              <i>Remember me</i>
-            </label>
-          </div>
-        </fieldset>
-        <span>
-          <a href="#" class="btn">Forgot your password?</a>
-        </span>
-      </form>
+<!-- Button trigger modal -->
+<i type="button" class="modalbtn loginbtn" data-toggle="modal" data-target="#loginModal">
+    Login
+</i>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Let's schooling</h5>
+            </div>
+            <div class="modal-body">
+                <form class="center-block" id="loginForm" #userLogin="ngForm" (submit)="sendUser(userLogin.value)">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Username" ngModel>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" required class="form-control" name="password" id="password"
+                               placeholder="Password" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-danger submit" id="login">Login</button>
+                    <span class="reset">
+                      <a href="#">Forgot your password?</a>
+                    </span>
+                </form>
+            </div>
+            <!--end modal body-->
+        </div>
     </div>
-  </div>
 </div>
+
+
+
+

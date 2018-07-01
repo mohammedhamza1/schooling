@@ -18,23 +18,21 @@ $(document).ready(function () {
         }, 1200);
     });
     //Smooth-Scrolling
-    // parent component
-    $('.degrees .child-degrees h4 button').click(function () {
+
+    // admin component
+    $('.staff h2 button , .stimetable h2 button , .degrees .child-degrees h4 button').click(function () {
         $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
     });
 
-    // student component
-    $('.stimetable h2 button').click(function () {
-        $(this).addClass('btn-lg').siblings().removeClass('btn-lg');
-    });
-    $('.modalbtn').on('mouseenter',function () {
-        $(this).removeClass('fa-envelope');
-        $(this).addClass('fa-envelope-open');
-    });
-    $('.modalbtn').on('mouseleave',function () {
-        $(this).removeClass('fa-envelope-open');
-        $(this).addClass('fa-envelope');
-    });
+    // messages components
+    // $('.modalbtn').on('mouseenter',function () {
+    //     $(this).removeClass('fa-envelope');
+    //     $(this).addClass('fa-envelope-open');
+    // });
+    // $('.modalbtn').on('mouseleave',function () {
+    //     $(this).removeClass('fa-envelope-open');
+    //     $(this).addClass('fa-envelope');
+    // });
     $('.modal-content .modal-body .message-content .row').mouseenter(function () {
         $(this).addClass('row-dark');
     });
@@ -75,7 +73,7 @@ $(document).ready(function () {
         $('.modal-content .modal-body .message-content .message-body p').css('color','#888');
     });
 
-    //end student component
+    // end messages component //
 
     // navbar
     $(window).scroll(function () {
@@ -101,15 +99,15 @@ $(document).ready(function () {
           $('.navbar .navbar-nav > li >a').mouseleave(function () {
               $(this).css('color','#333');
           });
-          $('#loginpop a span').css({
+          $('.loginbtn').css({
               'color':'#333',
               'borderColor':'#333'
           });
-          $('#loginpop a span').mouseenter(function () {
+          $('.loginbtn').mouseenter(function () {
               $(this).css('border-color','#EE2B47');
               $(this).css('color','#EE2B47');
           });
-          $('#loginpop a span').mouseleave(function () {
+          $('.loginbtn').mouseleave(function () {
               $(this).css('border-color','#333');
               $(this).css('color','#333');
           });
@@ -138,15 +136,15 @@ $(document).ready(function () {
           $('.navbar .navbar-nav > li.user').mouseenter(function () {
               $(this).css('border-bottom','none')
           });
-          $('#loginpop a span').css({
+          $('.loginbtn').css({
               'color':'#fff',
               'borderColor':'#fff'
           });
-          $('#loginpop a span').mouseenter(function () {
+          $('.loginbtn').mouseenter(function () {
               $(this).css('border-color','#EE2B47');
               $(this).css('color','#EE2B47');
           });
-          $('#loginpop a span').mouseleave(function () {
+          $('.loginbtn').mouseleave(function () {
               $(this).css('border-color','#fff');
               $(this).css('color','#fff');
           });
@@ -206,4 +204,14 @@ $(document).ready(function () {
             }
         });
     });
+
+    $("body").niceScroll(
+        {
+            cursorcolor:"#ed1c24",
+            cursorwidth:"10px",
+            cursorborder:"none",
+            cursorborderradius:"5px"
+        }
+    );
+
 });

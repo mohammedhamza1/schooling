@@ -1,0 +1,87 @@
+.aparents {
+    background: #222;
+    color: #fff;
+    margin-top: 85px;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+.aparents h3{
+    padding-top: 0;
+}
+.aparents .parent-form-wrapper input[type="text"] {
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Montserrat-Regular';
+    text-transform: capitalize;
+}
+
+.aparents .parent-form-wrapper input[type="text"]::placeholder, form textarea::placeholder {
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    text-transform: capitalize;
+}
+
+.aparents .parent-form-wrapper input[type="text"]:focus, form textarea:focus {
+    box-shadow: 0px 1px 17px -6px #ccc;
+}
+
+.aparents .parent .parent-wrapper {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.aparents .parent .parent-wrapper .parent-name {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat-Regular';
+    vertical-align: bottom;
+    display: block;
+    text-align: left;
+}
+
+.aparents .parent .parent-wrapper .parent-name .badge {
+    font-size: 15px;
+    padding-top: 2px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+    vertical-align: text-top;
+}
+
+form textarea {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    resize: none;
+    font-size: 17px;
+    font-family: 'Montserrat-Regular';
+    width: 96%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+form button {
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    outline: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 115px;
+    transition: all ease-in-out .3s;
+}
+
+form button:hover, form button:focus {
+    background: #fd2f37;
+    border-color: #fd2f37;
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+.news{
+    color: #fff;
+}
+.news-wrapper{
+    margin-top: 60px;
+}
+.news-wrapper form input {
+    height: 50px;
+}
+
+.news-wrapper form input, .news-wrapper form textarea {
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    border: 1px solid #fff;
+    box-shadow: 0px 1px 17px -6px #222;
+    resize: none;
+}
+
+.news-wrapper form input::placeholder, .news-wrapper form textarea::placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.news-wrapper form button {
+    background: #ed1c24;
+    color: #fff;
+    text-transform: uppercase;
+    border-color: #ed1c24;
+    outline: #ed1c24;
+    margin-bottom: 5px;
+    padding: 10px;
+    transition: all ease-in-out .3s;
+}
+
+.news-wrapper form button:hover, .news-wrapper form button:focus {
+    background: #fd2f37;
+    border-color: #fd2f37;
+}
