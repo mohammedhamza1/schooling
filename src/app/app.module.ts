@@ -66,6 +66,7 @@ import { AparentsComponent } from './admin-components/aparents/aparents.componen
 import { AeventsComponent } from './admin-components/aevents-and-news/aevents/aevents.component';
 import { AeventsAndNewsComponent } from './admin-components/aevents-and-news/aevents-and-news.component';
 import { AnewsComponent } from './admin-components/aevents-and-news/anews/anews.component';
+import { TeacherComponent } from './teacher-components/teacher/teacher.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -137,7 +138,8 @@ const appRoutes: Routes = [
         AparentsComponent,
         AeventsComponent,
         AeventsAndNewsComponent,
-        AnewsComponent
+        AnewsComponent,
+        TeacherComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
