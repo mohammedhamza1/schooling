@@ -34,7 +34,7 @@
     position: relative;
     padding: 15px;
     font-size: 18px;
-    width: 18%;
+    width: 15%;
     margin: auto;
     font-weight: bold;
     text-transform: capitalize;
@@ -185,7 +185,7 @@ form button:hover, form button:focus {
 }
 
 .classesPagination {
-    padding: 0 0 80px;
+    padding: 0;
     font-size: 20px;
     margin-bottom: 20px;
 }
