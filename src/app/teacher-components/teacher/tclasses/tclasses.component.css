@@ -140,7 +140,6 @@ h6.class-btns {
     border-radius: 7px;
     border: 1px solid #ccc;
 }
-
 form label {
     display: block;
     text-align: center;
@@ -171,6 +170,30 @@ form button {
 form button:hover, form button:focus {
     background: #fd2f37;
     border-color: #fd2f37;
+}
+.modal-content .modal-body-students .student .card .marks-wrapper{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.modal-content .modal-body-students .student .card .marks-wrapper form input{
+    width: 100px;
+    height: 48px ;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+}
+.modal-content .modal-body-students .student .card .marks-wrapper form button{
+    width: 50%;
+    height: 48px ;
+    margin:0 auto 15px;
+
+}
+.modal-content .modal-body-students .student .card .marks-wrapper form input::placeholder{
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .students .view-students {

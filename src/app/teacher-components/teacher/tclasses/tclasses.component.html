@@ -71,7 +71,20 @@
                                         </p>
                                         <div class="collapse" id="collapseExample{{student.id}}">
                                           <div class="card card-body">
-                                              <form action="">
+                                              <!--start marks-->
+                                                  <div class="marks-wrapper text-center">
+                                                      <form action="" class="form-inline">
+                                                           <label for="">add marks</label>
+                                                              <input type="text" class="form-control" value="{{student.id}}" placeholder="midterm">
+                                                              <input type="text" class="form-control" placeholder="practical">
+                                                              <input type="text" class="form-control" placeholder="oral">
+                                                              <input type="text" class="form-control" placeholder="activities">
+                                                              <input type="text" class="form-control" placeholder="Attendance">
+                                                          <button type="submit" class="btn btn-primary btn-block">Add</button>
+                                                      </form>
+                                                  </div>
+                                              <!--end marks-->
+                                              <form action="" class="class-message-form">
                                                 <div class="form-group">
                                                     <label for="studentMessage">Send message?</label>
                                                     <textarea class="form-control" id="studentMessage"
