@@ -75,6 +75,7 @@ import { TnotificationsComponent } from './teacher-components/teacher/tnotificat
 import { TtimetableComponent } from './teacher-components/teacher/ttimetable/ttimetable.component';
 import { TclassesComponent } from './teacher-components/teacher/tclasses/tclasses.component';
 import { UploadComponent } from './teacher-components/teacher/upload/upload.component';
+import { TeventsComponent } from './teacher-components/teacher/tevents/tevents.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -156,7 +157,8 @@ const appRoutes: Routes = [
         TnotificationsComponent,
         TtimetableComponent,
         TclassesComponent,
-        UploadComponent
+        UploadComponent,
+        TeventsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
