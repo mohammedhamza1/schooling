@@ -67,6 +67,11 @@ import { AeventsComponent } from './admin-components/aevents-and-news/aevents/ae
 import { AeventsAndNewsComponent } from './admin-components/aevents-and-news/aevents-and-news.component';
 import { AnewsComponent } from './admin-components/aevents-and-news/anews/anews.component';
 import { TeacherComponent } from './teacher-components/teacher/teacher.component';
+import { TnavbarComponent } from './teacher-components/teacher/tnavbar/tnavbar.component';
+import { TfooterComponent } from './teacher-components/teacher/tfooter/tfooter.component';
+import { TmessagesComponent } from './teacher-components/teacher/tmessages/tmessages.component';
+import { TinformationsComponent } from './teacher-components/teacher/tinformations/tinformations.component';
+import { TnotificationsComponent } from './teacher-components/teacher/tnotifications/tnotifications.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -140,7 +145,12 @@ const appRoutes: Routes = [
         AeventsComponent,
         AeventsAndNewsComponent,
         AnewsComponent,
-        TeacherComponent
+        TeacherComponent,
+        TnavbarComponent,
+        TfooterComponent,
+        TmessagesComponent,
+        TinformationsComponent,
+        TnotificationsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
