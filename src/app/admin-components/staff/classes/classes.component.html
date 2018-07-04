@@ -5,7 +5,7 @@
                 <h2>Class <span class="badge badge-danger">{{class.name}}</span></h2>
                 <h6>
                     <span class="year">level {{class.level}}</span>
-                    <span class="num">{{class.studentsNum}} student</span>
+                    <span class="num">{{class.classStudents.length}} student</span>
                 </h6>
             </div>
             <h6 class="class-btns">
@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="modal-body modal-body-students">
                                     <!--student-->
-                                    <div class="student" *ngFor="let student of studentsArray">
+                                    <div class="student" *ngFor="let student of class.classStudents">
                                         <p class="student-wrapper">
                                           <a class="student-name" data-toggle="collapse" href="#collapseExample{{student.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
                                             <span class="badge badge-danger">{{student.id}}</span>
