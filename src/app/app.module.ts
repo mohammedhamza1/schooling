@@ -73,6 +73,7 @@ import { TmessagesComponent } from './teacher-components/teacher/tmessages/tmess
 import { TinformationsComponent } from './teacher-components/teacher/tinformations/tinformations.component';
 import { TnotificationsComponent } from './teacher-components/teacher/tnotifications/tnotifications.component';
 import { TtimetableComponent } from './teacher-components/teacher/ttimetable/ttimetable.component';
+import { TclassesComponent } from './teacher-components/teacher/tclasses/tclasses.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -152,7 +153,8 @@ const appRoutes: Routes = [
         TmessagesComponent,
         TinformationsComponent,
         TnotificationsComponent,
-        TtimetableComponent
+        TtimetableComponent,
+        TclassesComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule
