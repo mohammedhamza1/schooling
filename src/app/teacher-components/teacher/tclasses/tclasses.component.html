@@ -1,4 +1,4 @@
-<div class="classes">
+<div class="classes" id="classes">
     <div class="overlay">
         <div class="class" *ngFor="let class of classesArray | paginate: { itemsPerPage: 1, currentPage: p }">
             <div class="class-info">
@@ -11,11 +11,13 @@
             <h6 class="class-btns">
                 <span class="message">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger  messagebtn" data-toggle="modal" data-target="#classModal">
+                    <button type="button" class="btn btn-danger  messagebtn" data-toggle="modal"
+                            data-target="#classModal">
                         send message
                     </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="classModalLabel"
+                    <div class="modal fade" id="classModal" tabindex="-1" role="dialog"
+                         aria-labelledby="classModalLabel"
                          aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -50,7 +52,8 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header modal-header-students">
-                                    <h5 class="modal-title" id="studentsModalLabel">Students of class <span class="badge badge-danger">{{class.name}}</span></h5>
+                                    <h5 class="modal-title" id="studentsModalLabel">Students of class <span
+                                            class="badge badge-danger">{{class.name}}</span></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -59,17 +62,33 @@
                                     <!--student-->
                                     <div class="student" *ngFor="let student of class.classStudents">
                                         <p class="student-wrapper">
-                                          <a class="student-name" data-toggle="collapse" href="#collapseExample{{student.id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          <a class="student-name" data-toggle="collapse"
+                                             href="#collapseExample{{student.id}}" role="button" aria-expanded="false"
+                                             aria-controls="collapseExample">
                                             <span class="badge badge-danger">{{student.id}}</span>
                                             {{student.fname}} {{student.lname}}
                                           </a>
                                         </p>
                                         <div class="collapse" id="collapseExample{{student.id}}">
                                           <div class="card card-body">
-                                              <form action="">
+                                              <!--start marks-->
+                                                  <div class="marks-wrapper text-center">
+                                                      <form action="" class="form-inline">
+                                                           <label for="">add marks</label>
+                                                              <input type="text" class="form-control" value="{{student.id}}" placeholder="midterm">
+                                                              <input type="text" class="form-control" placeholder="practical">
+                                                              <input type="text" class="form-control" placeholder="oral">
+                                                              <input type="text" class="form-control" placeholder="activities">
+                                                              <input type="text" class="form-control" placeholder="Attendance">
+                                                          <button type="submit" class="btn btn-primary btn-block">Add</button>
+                                                      </form>
+                                                  </div>
+                                              <!--end marks-->
+                                              <form action="" class="class-message-form">
                                                 <div class="form-group">
                                                     <label for="studentMessage">Send message?</label>
-                                                    <textarea class="form-control" id="studentMessage" rows="5"></textarea>
+                                                    <textarea class="form-control" id="studentMessage"
+                                                              rows="5"></textarea>
                                                 </div>
                                                     <button type="submit" class="btn btn-danger btn-lg center-block">Send</button>
                                               </form>

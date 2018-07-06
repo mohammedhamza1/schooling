@@ -15,6 +15,12 @@
 
 /*-- Reset Code --*/
 
+/*pagination*/
+.ngx-pagination .current{
+    background: #ed1c24 !important;
+}
+/*pagination*/
+
 body {
     padding: 0;
     margin: 0;

@@ -66,6 +66,16 @@ import { AparentsComponent } from './admin-components/aparents/aparents.componen
 import { AeventsComponent } from './admin-components/aevents-and-news/aevents/aevents.component';
 import { AeventsAndNewsComponent } from './admin-components/aevents-and-news/aevents-and-news.component';
 import { AnewsComponent } from './admin-components/aevents-and-news/anews/anews.component';
+import { TeacherComponent } from './teacher-components/teacher/teacher.component';
+import { TnavbarComponent } from './teacher-components/teacher/tnavbar/tnavbar.component';
+import { TfooterComponent } from './teacher-components/teacher/tfooter/tfooter.component';
+import { TmessagesComponent } from './teacher-components/teacher/tmessages/tmessages.component';
+import { TinformationsComponent } from './teacher-components/teacher/tinformations/tinformations.component';
+import { TnotificationsComponent } from './teacher-components/teacher/tnotifications/tnotifications.component';
+import { TtimetableComponent } from './teacher-components/teacher/ttimetable/ttimetable.component';
+import { TclassesComponent } from './teacher-components/teacher/tclasses/tclasses.component';
+import { UploadComponent } from './teacher-components/teacher/upload/upload.component';
+import { TeventsComponent } from './teacher-components/teacher/tevents/tevents.component';
 
 // our routes
 const appRoutes: Routes = [
@@ -73,6 +83,7 @@ const appRoutes: Routes = [
     {path: 'student', component: StudentComponent},
     {path: 'parent', component: ParentComponent},
     {path: 'admin', component: AdminComponent},
+    {path: 'teacher', component: TeacherComponent},
     {
         path: '',
         redirectTo: '/home',
@@ -137,7 +148,17 @@ const appRoutes: Routes = [
         AparentsComponent,
         AeventsComponent,
         AeventsAndNewsComponent,
-        AnewsComponent
+        AnewsComponent,
+        TeacherComponent,
+        TnavbarComponent,
+        TfooterComponent,
+        TmessagesComponent,
+        TinformationsComponent,
+        TnotificationsComponent,
+        TtimetableComponent,
+        TclassesComponent,
+        UploadComponent,
+        TeventsComponent
     ],
     imports: [
         BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpClientModule, NgxPaginationModule, Ng2SearchPipeModule

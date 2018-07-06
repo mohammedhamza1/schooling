@@ -1,0 +1,45 @@
+/*-- Events-Starts-Here --*/
+.events{
+    background: #333;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-top: 130px;
+}
+.events .col-sm-6.col-md-6:first-child{
+    border-right: 1px solid #555;
+}
+.events h3{
+    text-transform: uppercase;
+}
+.event .event-body {
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.event .event-body .title{
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.event .event-body .when{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.event .event-body .when .from{
+    margin-right: 5px;
+}
+.event .event-body .when .to{
+    margin-left: 5px;
+}
+.event .event-body .when .from .date,
+.event .event-body .when .from .time,
+.event .event-body .when .to .date,
+.event .event-body .when .to .time{
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+}
